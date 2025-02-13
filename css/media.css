@@ -1,0 +1,143 @@
+@media (hover: hover) {
+	.menu-link:hover {
+		color: var(--color-olive);
+	}
+	.link--primary:hover {
+		background-color: var(--color-olive);
+		border-color: var(--color-olive);
+		color: var(--color-white);
+		stroke: var(--color-white);
+	}
+}
+@media (orientation: portrait) {
+	.hero {
+		height: 50vh;
+	}
+	.hero-inner br {
+		display: none;
+	}
+	.hero-inner {
+		padding-top: 15vh;
+	}
+	.hero-bg {
+		position: absolute;
+		inset: 0px 0px 0px auto;
+		z-index: -1;
+		max-height: 50%;
+		width: 49%;
+		object-fit: cover;
+	}
+	.hero-decor {
+		inset: 42vh 0px auto;
+	}
+}
+@media (max-width: 1440px) {
+	/* HERO */
+	.hero-decor {
+		position: absolute;
+		left: 0;
+		right: 0;
+		--font-size: 88px;
+		font-size: var(--font-size);
+	}
+}
+@media (max-width: 1400px) {
+	/* HERO */
+	.hero-decor {
+		--font-size: 62px;
+		font-size: var(--font-size);
+		gap: 25px;
+	}
+}
+@media (max-width: 1024px) {
+	h1 {
+		--font-size: 30px;
+		font-size: var(--font-size);
+	}
+	h3 {
+		--font-size: 14px;
+		font-size: var(--font-size);
+	}
+	/* HEADER */
+	.header {
+		margin-bottom: 12vh;
+	}
+	/* HERO */
+	.hero-inner {
+	}
+	.hero-inner br {
+		display: none;
+	}
+	.hero-title {
+		margin-bottom: 2vh;
+	}
+	.hero-subtitle {
+		margin-bottom: 4vh;
+	}
+	.hero-decor {
+		--font-size: 44px;
+		font-size: var(--font-size);
+		gap: 20px;
+		/* top: 86vh; */
+	}
+}
+@media (orientation: portrait) and (max-width: 768px) {
+	/* HEADER */
+	.header {
+		margin-bottom: 6vh;
+	}
+	.burger-menu__line {
+		background-color: var(--color-dark);
+	}
+	/* HERO */
+	.hero {
+		height: 100vh;
+	}
+	.hero-inner {
+		max-width: 70%;
+		padding-top: 15vh;
+	}
+	.hero-bg {
+		width: 100%;
+		max-height: 45vh;
+		inset: auto 0px 0px;
+	}
+	.hero-decor {
+		position: absolute;
+		inset: 0;
+	}
+	.hero-decor--left {
+		position: absolute;
+		bottom: 43vh;
+		left: 0;
+	}
+	.hero-decor--right {
+		position: absolute;
+		right: 0;
+		bottom: -15px;
+	}
+}
+@media (max-device-width: 740px) and (max-device-height: 430px) {
+	.hero-decor {
+		display: none;
+	}
+}
+@media (max-width: 480px) {
+	br {
+		display: none;
+	}
+	.hero-inner {
+		max-width: 100%;
+	}
+}
+@media (max-width: 390px) {
+	h1 {
+		--font-size: 26px;
+		font-size: var(--font-size);
+	}
+	/* HERO */
+	.hero-decor {
+		--font-size: 40px;
+		font-size: var(--font-size);
+	}
+}
