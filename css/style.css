@@ -12,6 +12,7 @@ a {
 .header {
 	position: fixed;
 	inset: 0 0 auto;
+	z-index: 1;
 	font-family: var(--font-family-heading);
 	padding: 25px 0;
 }
