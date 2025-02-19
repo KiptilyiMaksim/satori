@@ -150,7 +150,7 @@
 		font-size: var(--font-size);
 	}
 }
-@media (max-height: 1024px) and (max-width: 768px) {
+@media (max-height: 1024px) and (max-width: 768px) and (orientation: portrait) {
 	.hero-bg {
 		max-height: 400px;
 	}
@@ -158,7 +158,7 @@
 		bottom: 385px;
 	}
 }
-@media (max-height: 824px) and (max-width: 768px) {
+@media (max-height: 824px) and (max-width: 768px) and (orientation: portrait) {
 	.hero-bg {
 		max-height: 306px;
 	}
@@ -166,12 +166,12 @@
 		bottom: 290px;
 	}
 }
-@media (max-height: 724px) and (max-width: 768px) {
+@media (max-height: 724px) and (max-width: 768px) and (orientation: portrait) {
 	.hero-bg {
 		max-height: 290px;
 	}
 	.hero-decor--left {
-		bottom: 275px;
+		bottom: 276px;
 	}
 }
 @media (max-height: 320px) and (orientation: landscape) {
