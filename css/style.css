@@ -16,6 +16,13 @@ a {
 	font-family: var(--font-family-heading);
 	padding: 25px 0;
 }
+.header.scrolled {
+	transition: background-color 0.3s ease-in;
+	background-color: #fff;
+}
+.header.scrolled .burger-menu__line {
+	background-color: var(--color-dark);
+}
 .header-wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -74,6 +81,9 @@ a {
 .burger-menu__line:nth-child(3) {
 	bottom: 0;
 }
+/* .burger-menu__line.scroll {
+	background-color: var(--color-dark);
+} */
 .menu-icon.active .burger-menu__line {
 	background-color: var(--color-dark);
 }

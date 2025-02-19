@@ -32,9 +32,8 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-	/* min-height: 100vh; */
+	min-height: 100vh;
 	text-rendering: optimizeSpeed;
-	/* line-height: var(--line-height); */
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
@@ -55,7 +54,7 @@ img {
 
 /* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
-	margin-top: 1em;
+	/* margin-top: 1em; */
 }
 
 /* Наследуем шрифты для инпутов и кнопок */
@@ -70,11 +69,11 @@ select {
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 /* @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+   animation-duration: 0.01ms !important;
+   animation-iteration-count: 1 !important;
+   transition-duration: 0.01ms !important;
+   scroll-behavior: auto !important;
+}
 } */
 
 /* Для сайта Satori */
