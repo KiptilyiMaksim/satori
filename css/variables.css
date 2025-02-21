@@ -3,16 +3,17 @@
 	/* Fonts */
 	--font-family-main: "Manrope", sans-serif;
 	--font-family-heading: "Lora", serif;
-	--font-size-main: 14px;
-	--line-height: 1.4;
+	/* --font-size-main: 14px;
+	--line-height: 1.4; */
 
 	/* MEDIA SIZE */
-	--media-desktop: 1440px;
+	/* --media-desktop: 1440px;
 	--media-tablet: 720px;
-	--media-mobile: 390px;
+	--media-mobile: 390px; */
 
 	/* COLOR */
-	--color-white: #f5f5f5;
+	--color-white: #ffffff;
+	--color-white-accent: #f5f5f5;
 	--color-dark: #2c2b2b;
 	--color-grey: #727272;
 	--color-olive: #60604c;
