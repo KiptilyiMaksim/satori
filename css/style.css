@@ -95,6 +95,7 @@ a {
 /* HERO */
 .hero {
 	height: 100vh;
+	margin-bottom: 100px;
 }
 .hero__content {
 	max-width: 51%;
@@ -105,8 +106,6 @@ a {
 }
 .hero__subtitle {
 	margin-bottom: 7vh;
-}
-.hero__link {
 }
 .decor-hero__text {
 	position: absolute;
@@ -155,3 +154,35 @@ a {
 	object-fit: cover;
 }
 /* /HERO/ */
+
+/* ABOUT */
+.about {
+	margin-bottom: 100px;
+}
+.container {
+}
+.about__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.about__title {
+	margin-bottom: 80px;
+	text-transform: uppercase;
+}
+.about__items {
+	display: flex;
+	gap: 40px;
+	text-align: center;
+	transform: translateY(40%);
+}
+
+.about__item {
+	max-width: 197px;
+}
+.item-about {
+}
+.item-about__title {
+}
+.item-about__text {
+}
