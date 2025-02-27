@@ -29,18 +29,18 @@ elements.forEach(element => {
 	observer.observe(element);
 });
 // Video
-const video = document.querySelector('.promo-test__video');
-const playButton = document.querySelector('.promo-test__play-btn');
-
-playButton.addEventListener('click', () => {
-	video.play();
-	playButton.classList.add('hidden');
-});
-
-video.addEventListener('click', () => {
+const video = document.querySelector('.promo__video');
+const videoControls = document.querySelector('.promo__controls')
+const playButton = document.querySelector('.promo__play-btn');
+const pauseButton = document.querySelector('.promo__pause-btn');
+videoControls.addEventListener('click', () => {
 	if (video.paused) {
 		video.play();
+		playButton.classList.add('hidden');
+		pauseButton.classList.remove('hidden');
 	} else {
 		video.pause();
+		pauseButton.classList.add('hidden');
+		playButton.classList.remove('hidden');
 	}
 });
