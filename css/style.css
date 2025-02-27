@@ -153,13 +153,10 @@ a {
 	width: 49%;
 	object-fit: cover;
 }
-/* /HERO/ */
-
 /* ABOUT */
 .about {
+	position: relative;
 	margin-bottom: 100px;
-}
-.container {
 }
 .about__inner {
 	display: flex;
@@ -180,9 +177,47 @@ a {
 .about__item {
 	max-width: 197px;
 }
-.item-about {
+/* PROMO */
+/* .promo {
+	position: relative;
 }
-.item-about__title {
+.promo__inner {
+	height: 456px;
 }
-.item-about__text {
+.promo__video {
+	width: 100%;
+	height: 456px;
+}
+.promo__preview {
+}
+.preview__promo-img {
+	width: 100%;
+	height: 456px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	object-fit: cover;
+}
+.preview__promo-bnt {
+	position: absolute;
+} */
+/* PROMO TEST */
+.promo-test {
+	position: relative;
+	height: 456px;
+}
+.container {
+}
+.promo-test__inner {
+}
+.promo-test__video {
+	position: absolute;
+	inset: auto 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.promo-test__video-link {
+	position: static;
 }

@@ -28,3 +28,19 @@ let observer = new IntersectionObserver(callbacks, options);
 elements.forEach(element => {
 	observer.observe(element);
 });
+// Video
+const video = document.querySelector('.promo-test__video');
+const playButton = document.querySelector('.promo-test__play-btn');
+
+playButton.addEventListener('click', () => {
+	video.play();
+	playButton.classList.add('hidden');
+});
+
+video.addEventListener('click', () => {
+	if (video.paused) {
+		video.play();
+	} else {
+		video.pause();
+	}
+});
