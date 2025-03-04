@@ -29,11 +29,12 @@ elements.forEach(element => {
 	observer.observe(element);
 });
 // Video
+const promo = document.querySelector('.promo');
 const video = document.querySelector('.promo__video');
 const videoControls = document.querySelector('.promo__controls')
 const playButton = document.querySelector('.promo__play-btn');
 const pauseButton = document.querySelector('.promo__pause-btn');
-videoControls.addEventListener('click', () => {
+promo.addEventListener('click', () => {
 	if (video.paused) {
 		video.play();
 		playButton.classList.add('hidden');

@@ -180,6 +180,8 @@ a {
 /* PROMO */
 .promo {
 	position: relative;
+	cursor: pointer;
+	margin-bottom: 100px;
 }
 .promo__inner {
 	width: 100%;
@@ -198,9 +200,6 @@ a {
 	align-items: center;
 	height: 100%;
 }
-.promo__inner:hover .promo__btn {
-	opacity: 1;
-}
 .promo__btn {
 	position: absolute;
 	width: 92px;
@@ -215,7 +214,9 @@ a {
 		rgba(255, 255, 255, 0) 89.313%
 	);
 	border: 1px solid rgba(255, 255, 255, 0.6);
-	opacity: 0;
 	cursor: pointer;
 	transition: all 0.3s;
+}
+.promo__pause-btn {
+	opacity: 0;
 }
