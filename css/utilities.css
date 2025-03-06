@@ -15,10 +15,21 @@ h2 {
 	font-weight: 500;
 }
 h3 {
+	/* card-heading */
+	font-family: var(--font-family-heading);
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.subtitle {
 	/* subtitle */
 	font-size: 16px;
-	font-weight: 500;
-	line-height: 1.6;
+	color: var(--color-dark);
+}
+.subtitle-text {
+	/* subtitle-text */
+	font-size: 16px;
+	color: var(--color-grey);
 }
 p {
 	font-weight: 500;

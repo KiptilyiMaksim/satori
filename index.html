@@ -14,11 +14,14 @@
 		href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap"
 		rel="stylesheet">
 	<!-- CSS -->
+	<!-- style -->
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/utilities.css">
 	<link rel="stylesheet" href="./css/media.css">
 	<link rel="stylesheet" href="./css/variables.css">
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -53,8 +56,8 @@
 					<article class="hero__content">
 						<h1 class="hero__title">Spa-resort complex<br>
 							in the Carpathians</h1>
-						<h3 class="hero__subtitle">Find your serene retreat at our luxurious spa-resort, where <br>
-							modern comfort meets the timeless beauty of nature.</h3>
+						<p class="hero__subtitle subtitle">Find your serene retreat at our luxurious spa-resort, where <br>
+							modern comfort meets the timeless beauty of nature.</p>
 						<a href="#" class="hero__link link--primary">
 							<span class="hero__text link-text--primary">Book a room</span>
 							<svg class="hero__arrow link-arrow--primary" viewBox="0 0 22 16" fill="none"
@@ -76,47 +79,138 @@
 		</section>
 		<section class="about">
 			<div class="container">
-				<article class="about__inner">
-					<h2 class="about__title">About us</h2>
-					<ul class="about__items animated__block">
-						<li class="about__item item-about">
-							<h2 class="item-about__title">5</h2>
-							<p class="item-about__text">stars of service quality that will give you an unforgettable experience
-							</p>
-						</li>
-						<li class="about__item item-about">
-							<h2 class="item-about__title">10+</h2>
-							<p class="item-about__text">original relaxation, recovery programs, massage treatments</p>
-						</li>
-						<li class="about__item item-about">
-							<h2 class="item-about__title">200+</h2>
-							<p class="item-about__text">square meters of SPA area, located among the picturesque Carpathians
-							</p>
-						</li>
-						<li class="about__item item-about">
-							<h2 class="item-about__title">8+</h2>
-							<p class="item-about__text">years provide unforgettable vacations immersed in unforgettable nature
-							</p>
-						</li>
-					</ul>
-				</article>
-			</div>
-		</section>
-		<section class="promo">
-			<div class="container">
-				<div class="promo__inner">
-					<video class="promo__video" loop muted poster="./img/promo/promo__video-prev.jpg">
-						<source class="promo__video-link" src="./video/video-01.mp4" type="video/mp4">
-					</video>
-					<div class="promo__controls">
-						<button class="promo__btn promo__play-btn"><img src="./img/video/play-btn.svg"
-								alt="play-btn"></button>
-						<button class="promo__btn promo__pause-btn hidden"><img src="./img/video/pause-btn.svg"
-								alt="pause-btn"></button>
+				<article class="about__info">
+					<div class="about__inner">
+						<h2 class="about__title">About us</h2>
+						<ul class="about__items animated__block">
+							<li class="about__item item-about">
+								<h2 class="item-about__title">5</h2>
+								<p class="item-about__text">stars of service quality that will give you an unforgettable
+									experience
+								</p>
+							</li>
+							<li class="about__item item-about">
+								<h2 class="item-about__title">10+</h2>
+								<p class="item-about__text">original relaxation, recovery programs, massage treatments</p>
+							</li>
+							<li class="about__item item-about">
+								<h2 class="item-about__title">200+</h2>
+								<p class="item-about__text">square meters of SPA area, located among the picturesque Carpathians
+								</p>
+							</li>
+							<li class="about__item item-about">
+								<h2 class="item-about__title">8+</h2>
+								<p class="item-about__text">years provide unforgettable vacations immersed in unforgettable
+									nature
+								</p>
+							</li>
+						</ul>
 					</div>
+				</article>
+				<section class="about__promo promo-about">
+					<div class="promo-about__inner">
+						<video class="promo-about__video" loop muted poster="./img/about/promo-about__video-prev.jpg">
+							<source class="promo-about__video-link" src="./video/about/video-01.mp4" type="video/mp4">
+						</video>
+						<div class="promo-about__controls">
+							<button class="promo-about__btn promo-about__play-btn"><img src="./img/video/play-btn.svg"
+									alt="play-btn"></button>
+							<button class="promo-about__btn promo-about__pause-btn hidden"><img src="./img/video/pause-btn.svg"
+									alt="pause-btn"></button>
+						</div>
+					</div>
+				</section>
+		</section>
+		<!-- <section class="facilities">
+			<div class="container">
+				<h2 class="facilities__title">Our Facilities</h2>
+				<div class="facilities__swiper swiper">
+					<div class="facilities__swiper-wrapper swiper-wrapper">
+						<div class="facilities__swiper-slide swiper-slide">
+							<div class="facilities__swiper-images">
+								<img class="facilities__swiper-img" src="./img/facilities/slide-img01.jpg" alt="Slide 01">
+							</div>
+							<article class="facilities__swiper-card swiper-card__facilities">
+								<h3 class="facilities__swiper-title">restaurant</h3>
+								<div class="swiper-card__facilities-inner">
+									<p class="swiper-card__facilities-subtitle subtitle-text">The cozy restaurant located on
+										the hotel
+										grounds
+										will delight you with delicious dishes of Ukrainian and Georgian cuisine</p>
+									<div class="swiper-card__facilities-info">
+										<p class="swiper-card__facilities-heading subtitle">Rooms include two meal plans:</p>
+										<ul class="swiper-card__facilities-items">
+											<li class="swiper-card__facilities-item subtitle-text">Bed & Breakfast</li>
+											<li class="swiper-card__facilities-item subtitle-text">All Inclusive</li>
+										</ul>
+									</div>
+									<div class="swiper-card__facilities-info">
+										<p class="swiper-card__facilities-heading subtitle">Working hours:</p>
+										<ul class="swiper-card__facilities-items">
+											<li class="swiper-card__facilities-item subtitle-text">Breakfast 7:30-10:30</li>
+											<li class="swiper-card__facilities-item subtitle-text">Restaurant until 22:30</li>
+										</ul>
+									</div>
+								</div>
+								<a href="#" class="swiper-card__facilities-link link--primary">
+									<span class="swiper-card__facilities-text link-text--primary">Book a room</span>
+									<svg class="swiper-card__facilities-arrow link-arrow--primary" viewBox="0 0 22 16"
+										fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</a>
+							</article>
+						</div>
+						<div class="facilities__swiper-slide swiper-slide">
+							<div class="facilities__swiper-images">
+								<img class="facilities__swiper-img" src="./img/facilities/slide-img01.jpg" alt="Slide 01">
+							</div>
+							<article class="facilities__swiper-card swiper-card__facilities">
+								<h3 class="facilities__swiper-title">restaurant</h3>
+								<div class="swiper-card__facilities-inner">
+									<p class="swiper-card__facilities-subtitle subtitle-text">The cozy restaurant located on
+										the hotel
+										grounds
+										will delight you with delicious dishes of Ukrainian and Georgian cuisine</p>
+									<div class="swiper-card__facilities-info">
+										<p class="swiper-card__facilities-heading subtitle">Rooms include two meal plans:</p>
+										<ul class="swiper-card__facilities-items">
+											<li class="swiper-card__facilities-item subtitle-text">Bed & Breakfast</li>
+											<li class="swiper-card__facilities-item subtitle-text">All Inclusive</li>
+										</ul>
+									</div>
+									<div class="swiper-card__facilities-info">
+										<p class="swiper-card__facilities-heading subtitle">Working hours:</p>
+										<ul class="swiper-card__facilities-items">
+											<li class="swiper-card__facilities-item subtitle-text">Breakfast 7:30-10:30</li>
+											<li class="swiper-card__facilities-item subtitle-text">Restaurant until 22:30</li>
+										</ul>
+									</div>
+								</div>
+								<a href="#" class="swiper-card__facilities-link link--primary">
+									<span class="swiper-card__facilities-text link-text--primary">Book a room</span>
+									<svg class="swiper-card__facilities-arrow link-arrow--primary" viewBox="0 0 22 16"
+										fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</a>
+							</article>
+						</div>
+						<div class="facilities__swiper-slide swiper-slide">Slide 2</div>
+						<div class="facilities__swiper-slide swiper-slide">Slide 3</div>
+						<div class="facilities__swiper-slide swiper-slide">Slide 4</div>
+						<div class="facilities__swiper-slide swiper-slide">Slide 5</div>
+					</div>
+					<div class="facilities__swiper-pagination swiper-pagination"></div>
+
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-scrollbar"></div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<div class="section">
 			<p>1Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate explicabo ad necessitatibus
 				corrupti,
@@ -170,6 +264,9 @@
 	</main>
 	<footer class="footer"></footer>
 	<script src="./js/main.js"></script>
+	<!-- SWIPER -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>

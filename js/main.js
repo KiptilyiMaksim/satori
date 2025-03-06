@@ -29,11 +29,11 @@ elements.forEach(element => {
 	observer.observe(element);
 });
 // Video
-const promo = document.querySelector('.promo');
-const video = document.querySelector('.promo__video');
-const videoControls = document.querySelector('.promo__controls')
-const playButton = document.querySelector('.promo__play-btn');
-const pauseButton = document.querySelector('.promo__pause-btn');
+const promo = document.querySelector('.promo-about');
+const video = document.querySelector('.promo-about__video');
+const videoControls = document.querySelector('.promo-about__controls')
+const playButton = document.querySelector('.promo-about__play-btn');
+const pauseButton = document.querySelector('.promo-about__pause-btn');
 promo.addEventListener('click', () => {
 	if (video.paused) {
 		video.play();
@@ -44,4 +44,11 @@ promo.addEventListener('click', () => {
 		pauseButton.classList.add('hidden');
 		playButton.classList.remove('hidden');
 	}
+});
+var swiper = new Swiper(".mySwiper", {
+	direction: "vertical",
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
 });

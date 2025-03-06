@@ -8,7 +8,7 @@
 		color: var(--color-white-accent);
 		stroke: var(--color-white-accent);
 	}
-	.promo__inner:hover .promo__btn {
+	.promo-about__inner:hover .promo-about__btn {
 		opacity: 1;
 	}
 }
@@ -166,10 +166,10 @@
 		gap: 20px;
 	}
 	/* PROMO */
-	.promo {
+	.promo-about {
 		margin-bottom: 80px;
 	}
-	.promo__inner {
+	.promo-about__inner {
 		height: 444px;
 	}
 }
