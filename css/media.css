@@ -154,6 +154,9 @@
 	}
 	/* ABOUT */
 	.about {
+		margin-bottom: 80px;
+	}
+	.about__info {
 		margin-bottom: 60px;
 	}
 	.about__title {
@@ -166,9 +169,6 @@
 		gap: 20px;
 	}
 	/* PROMO */
-	.promo-about {
-		margin-bottom: 80px;
-	}
 	.promo-about__inner {
 		height: 444px;
 	}

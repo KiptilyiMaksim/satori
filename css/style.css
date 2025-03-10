@@ -154,6 +154,9 @@ a {
 	object-fit: cover;
 }
 /* ABOUT */
+.about {
+	margin-bottom: 100px;
+}
 .about__info {
 	position: relative;
 	margin-bottom: 100px;
@@ -177,10 +180,9 @@ a {
 .about__item {
 	max-width: 197px;
 }
-/* PROMO */
+/* ABOUT-PROMO */
 .promo-about {
 	cursor: pointer;
-	margin-bottom: 100px;
 }
 .promo-about__inner {
 	width: 100%;
@@ -229,38 +231,36 @@ a {
 	margin-bottom: 80px;
 }
 .facilities__swiper {
-	min-height: 100vh;
 }
 .facilities__swiper-wrapper {
 	display: flex;
-	justify-content: flex-end;
-	height: 100vh;
+	flex-direction: column;
 }
 .swiper-wrapper {
 }
 .facilities__swiper-slide {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 .swiper-slide {
 }
 .facilities__swiper-images {
-	height: 100vh;
-	max-width: 730px;
+	height: 100svh;
+	max-width: 48%;
 }
 .facilities__swiper-img {
 	position: absolute;
-	top: 0;
 	left: 0;
 	object-fit: cover;
-	height: 100vh;
+	height: 100svh;
 	max-width: 49%;
 }
 .facilities__swiper-card {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-	max-width: 522px;
+	max-width: 45%;
 }
 .swiper-card__facilities {
 }

@@ -45,10 +45,13 @@ promo.addEventListener('click', () => {
 		playButton.classList.remove('hidden');
 	}
 });
+// SWIPER
 var swiper = new Swiper(".mySwiper", {
 	direction: "vertical",
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
 	},
+	slidesPerView: 1,
+	spaceBetween: 0,
 });
