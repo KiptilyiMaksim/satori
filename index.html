@@ -14,7 +14,6 @@
 		href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap"
 		rel="stylesheet">
 	<!-- CSS -->
-
 	<!-- swiper -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.css">
 	<!-- style -->
@@ -23,42 +22,6 @@
 	<link rel="stylesheet" href="./css/utilities.css">
 	<link rel="stylesheet" href="./css/media.css">
 	<link rel="stylesheet" href="./css/variables.css">
-
-
-	<style>
-		.box__1 {
-			position: relative;
-			width: 100%;
-			height: 100px;
-		}
-
-		.container__1 {
-			max-width: 800px;
-			height: 100%;
-			margin: 0 auto;
-		}
-
-		.box__2 {
-			position: relative;
-			width: 100%;
-			height: 100%;
-		}
-
-		.box__3 {
-			width: 100%;
-			height: 100px;
-		}
-
-		.box__3-img {
-			display: block;
-			width: 50%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			/* Вместо изображения указан фоновый цвет */
-			background-color: black;
-		}
-	</style>
 </head>
 
 <body>
@@ -159,47 +122,11 @@
 				</section>
 		</section>
 		<section class="facilities">
-			<div class="container">
-				<h2 class="facilities__title">Our Facilities</h2>
-				<div class="swiper facilities__swiper">
-					<div class="swiper-wrapper facilities__swiper-wrapper">
-						<div class="swiper-slide facilities__swiper-slide">
-							<div class="facilities__swiper-images">
-								<img class="facilities__swiper-img" src="./img/facilities/slide-img01.jpg" alt="Slide 01">
-							</div>
-							<article class="facilities__swiper-card swiper-card__facilities">
-								<h3 class="facilities__swiper-title">restaurant</h3>
-								<div class="swiper-card__facilities-inner">
-									<p class="swiper-card__facilities-subtitle subtitle-text">The cozy restaurant located on
-										the hotel
-										grounds
-										will delight you with delicious dishes of Ukrainian and Georgian cuisine</p>
-									<div class="swiper-card__facilities-info">
-										<p class="swiper-card__facilities-heading subtitle">Rooms include two meal plans:</p>
-										<ul class="swiper-card__facilities-items">
-											<li class="swiper-card__facilities-item subtitle-text">Bed & Breakfast</li>
-											<li class="swiper-card__facilities-item subtitle-text">All Inclusive</li>
-										</ul>
-									</div>
-									<div class="swiper-card__facilities-info">
-										<p class="swiper-card__facilities-heading subtitle">Working hours:</p>
-										<ul class="swiper-card__facilities-items">
-											<li class="swiper-card__facilities-item subtitle-text">Breakfast 7:30-10:30</li>
-											<li class="swiper-card__facilities-item subtitle-text">Restaurant until 22:30</li>
-										</ul>
-									</div>
-								</div>
-								<a href="#" class="swiper-card__facilities-link link--primary">
-									<span class="swiper-card__facilities-text link-text--primary">Book a room</span>
-									<svg class="swiper-card__facilities-arrow link-arrow--primary" viewBox="0 0 22 16"
-										fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-								</a>
-							</article>
-						</div>
-						<div class="swiper-slide facilities__swiper-slide">
+			<h2 class="facilities__title">Our Facilities</h2>
+			<div class="facilities__swiper swiper">
+				<div class="facilities__swiper-wrapper swiper-wrapper">
+					<div class="facilities__slide swiper-slide">
+						<div class="facilities__slide-wrapper">
 							<div class="facilities__swiper-images">
 								<img class="facilities__swiper-img" src="./img/facilities/slide-img01.jpg" alt="Slide 01">
 							</div>
@@ -236,8 +163,46 @@
 							</article>
 						</div>
 					</div>
-					<div class="facilities__swiper-pagination swiper-pagination"></div>
+					<div class="facilities__slide swiper-slide">
+						<div class="facilities__slide-wrapper">
+							<div class="facilities__swiper-images">
+								<img class="facilities__swiper-img" src="./img/facilities/slide-img01.jpg" alt="Slide 01">
+							</div>
+							<article class="facilities__swiper-card swiper-card__facilities">
+								<h3 class="facilities__swiper-title">restaurant</h3>
+								<div class="swiper-card__facilities-inner">
+									<p class="swiper-card__facilities-subtitle subtitle-text">The cozy restaurant located on
+										the hotel
+										grounds
+										will delight you with delicious dishes of Ukrainian and Georgian cuisine</p>
+									<div class="swiper-card__facilities-info">
+										<p class="swiper-card__facilities-heading subtitle">Rooms include two meal plans:</p>
+										<ul class="swiper-card__facilities-items">
+											<li class="swiper-card__facilities-item subtitle-text">Bed & Breakfast</li>
+											<li class="swiper-card__facilities-item subtitle-text">All Inclusive</li>
+										</ul>
+									</div>
+									<div class="swiper-card__facilities-info">
+										<p class="swiper-card__facilities-heading subtitle">Working hours:</p>
+										<ul class="swiper-card__facilities-items">
+											<li class="swiper-card__facilities-item subtitle-text">Breakfast 7:30-10:30</li>
+											<li class="swiper-card__facilities-item subtitle-text">Restaurant until 22:30</li>
+										</ul>
+									</div>
+								</div>
+								<a href="#" class="swiper-card__facilities-link link--primary">
+									<span class="swiper-card__facilities-text link-text--primary">Book a room</span>
+									<svg class="swiper-card__facilities-arrow link-arrow--primary" viewBox="0 0 22 16"
+										fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</a>
+							</article>
+						</div>
+					</div>
 				</div>
+				<div class="facilities__swiper-pagination swiper-pagination"></div>
 			</div>
 		</section>
 		<!-- <div class="section">
@@ -292,10 +257,9 @@
 		</div> -->
 	</main>
 	<footer class="footer"></footer>
-	<script src="./js/main.js"></script>
 	<!-- SWIPER -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.js"></script>
-
+	<script src="./js/main.js"></script>
 </body>
 
 </html>

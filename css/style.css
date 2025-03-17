@@ -223,7 +223,7 @@ a {
 }
 /* FACILITIES */
 .facilities {
-	position: relative;
+	margin-bottom: 100px;
 }
 .facilities__title {
 	text-align: center;
@@ -231,36 +231,34 @@ a {
 	margin-bottom: 80px;
 }
 .facilities__swiper {
+	max-height: 900px;
 }
 .facilities__swiper-wrapper {
-	display: flex;
-	flex-direction: column;
 }
 .swiper-wrapper {
 }
-.facilities__swiper-slide {
+.facilities__slide {
+}
+.facilities__slide-wrapper {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	gap: 30px;
+	padding-right: max(20px, calc((100% - 1160px) / 2));
 }
 .swiper-slide {
 }
 .facilities__swiper-images {
-	height: 100svh;
-	max-width: 48%;
+	max-height: 100svh;
 }
 .facilities__swiper-img {
-	position: absolute;
-	left: 0;
 	object-fit: cover;
 	height: 100svh;
-	max-width: 49%;
 }
 .facilities__swiper-card {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-	max-width: 45%;
+	max-width: calc(100% - 51%);
 }
 .swiper-card__facilities {
 }
@@ -302,6 +300,10 @@ a {
 .link-arrow--primary {
 }
 .facilities__swiper-pagination {
+	right: auto !important;
+	left: max(20px, calc((100% - 1160px) / 2)) !important;
 }
 .swiper-pagination {
+}
+.swiper-pagination-bullet {
 }

@@ -46,12 +46,26 @@ promo.addEventListener('click', () => {
 	}
 });
 // SWIPER
-var swiper = new Swiper(".mySwiper", {
-	direction: "vertical",
+
+const swiper = new Swiper('.swiper', {
+	direction: 'vertical',
+	loop: true,
 	pagination: {
-		el: ".swiper-pagination",
+		el: '.swiper-pagination',
 		clickable: true,
+		renderBullet: function (index, className) {
+			// return "<span class='bullet-container'><span class='slide-number'>" + (index + 1) + "</span><span class='" + className + "'></span></span>";
+			return '<span class="' + className + '">' + (index + 1) + "</span>";
+		}
 	},
-	slidesPerView: 1,
-	spaceBetween: 0,
+	autoHeight: true,
+	spaceBetween: 20,
+	breakpoints: {
+		0: {
+			direction: 'horizontal',
+		},
+		1024: {
+			direction: 'vertical',
+		}
+	}
 });
