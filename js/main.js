@@ -49,14 +49,17 @@ promo.addEventListener('click', () => {
 
 const swiper = new Swiper('.swiper', {
 	direction: 'vertical',
+	grabCursor: true,
 	loop: true,
+	speed: 600,
 	pagination: {
 		el: '.swiper-pagination',
+		type: 'bullets',
 		clickable: true,
-		renderBullet: function (index, className) {
-			// return "<span class='bullet-container'><span class='slide-number'>" + (index + 1) + "</span><span class='" + className + "'></span></span>";
-			return '<span class="' + className + '">' + (index + 1) + "</span>";
-		}
+		// renderBullet: function (index, className) {
+		// return `<div class="bullet-container"><span class="slide-number">${0}${index + 1}</span><span class="${className}"></span></div>`;
+		// return '<span class="' + className + '">' + (index + 1) + '</span>';
+		// }
 	},
 	autoHeight: true,
 	spaceBetween: 20,
@@ -69,3 +72,9 @@ const swiper = new Swiper('.swiper', {
 		}
 	}
 });
+
+
+// НЕ РАБОТАЕТ
+// return '<span class="' + className + '"><span class="slide-number">' + 0 + (index + 1) + '</span></span>';
+// return '<span class="bullet-container"><span class="slide-number"> 0${index + 1}</span><span class="${className}"></span></span>';
+// return "<span class='bullet-items'><span class='bullet-item'><span class='slide-number'>" + "0" + (index + 1) + "</span></span><span class='" + className + "'></span></span>";
