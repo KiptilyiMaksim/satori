@@ -66,6 +66,7 @@ const swiper = new Swiper('.swiper', {
 	breakpoints: {
 		0: {
 			direction: 'horizontal',
+			autoHeight: false,
 		},
 		1024: {
 			direction: 'vertical',
