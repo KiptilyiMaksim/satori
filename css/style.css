@@ -241,7 +241,7 @@ a {
 	align-items: center;
 	justify-content: space-between;
 	gap: 108px;
-	padding-right: max(20px, calc((100% - 1160px) / 2));
+	padding-right: max(20px, calc((100% - 1280px) / 2));
 }
 .facilities__swiper-images {
 	height: 100vh;
@@ -276,7 +276,7 @@ a {
 }
 .facilities__swiper-pagination {
 	right: auto !important;
-	left: max(20px, calc((100% - 1160px) / 2)) !important;
+	left: max(20px, calc((100% - 1280px) / 2)) !important;
 }
 .swiper-pagination-bullet {
 	transition: all 0.5s ease-in-out;
