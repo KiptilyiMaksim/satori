@@ -45,9 +45,9 @@ promo.addEventListener('click', () => {
 		playButton.classList.remove('hidden');
 	}
 });
-// SWIPER
+// FACILITIES SWIPER
 
-const swiper = new Swiper('.swiper', {
+const swiperFacilities = new Swiper('.facilities__swiper', {
 	direction: 'vertical',
 	grabCursor: true,
 	loop: true,
@@ -73,9 +73,49 @@ const swiper = new Swiper('.swiper', {
 		}
 	}
 });
-
-
 // НЕ РАБОТАЕТ
 // return '<span class="' + className + '"><span class="slide-number">' + 0 + (index + 1) + '</span></span>';
 // return '<span class="bullet-container"><span class="slide-number"> 0${index + 1}</span><span class="${className}"></span></span>';
 // return "<span class='bullet-items'><span class='bullet-item'><span class='slide-number'>" + "0" + (index + 1) + "</span></span><span class='" + className + "'></span></span>";
+
+// GALLERY SWIPERs
+const swiperGallery1 = new Swiper('.swiper-gallery-1', {
+	direction: 'horizontal',
+	grabCursor: true,
+	loop: true,
+	speed: 600,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+const swiperGallery2 = new Swiper('.swiper-gallery-2', {
+	direction: 'horizontal',
+	grabCursor: true,
+	loop: true,
+	speed: 600,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+const swiperGallery3 = new Swiper('.swiper-gallery-3', {
+	direction: 'horizontal',
+	grabCursor: true,
+	loop: true,
+	speed: 600,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+const swiperGallery4 = new Swiper('.swiper-gallery-4', {
+	direction: 'horizontal',
+	grabCursor: true,
+	loop: true,
+	speed: 600,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
