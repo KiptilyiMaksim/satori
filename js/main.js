@@ -82,7 +82,6 @@ const swiperFacilities = new Swiper('.facilities__swiper', {
 const swiperGallery1 = new Swiper('.swiper-gallery-1', {
 	direction: 'horizontal',
 	grabCursor: true,
-	loop: true,
 	speed: 600,
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -92,7 +91,6 @@ const swiperGallery1 = new Swiper('.swiper-gallery-1', {
 const swiperGallery2 = new Swiper('.swiper-gallery-2', {
 	direction: 'horizontal',
 	grabCursor: true,
-	loop: true,
 	speed: 600,
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -102,7 +100,6 @@ const swiperGallery2 = new Swiper('.swiper-gallery-2', {
 const swiperGallery3 = new Swiper('.swiper-gallery-3', {
 	direction: 'horizontal',
 	grabCursor: true,
-	loop: true,
 	speed: 600,
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -112,7 +109,6 @@ const swiperGallery3 = new Swiper('.swiper-gallery-3', {
 const swiperGallery4 = new Swiper('.swiper-gallery-4', {
 	direction: 'horizontal',
 	grabCursor: true,
-	loop: true,
 	speed: 600,
 	navigation: {
 		nextEl: '.swiper-button-next',

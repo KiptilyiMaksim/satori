@@ -247,6 +247,11 @@
 	.room-card__img {
 		width: 100%;
 	}
+	/* GALLERY */
+	.swiper-gallery__title {
+		bottom: 20px;
+		font-size: 30px;
+	}
 }
 @media (max-width: 480px) {
 	/* BASE Style */
@@ -294,9 +299,6 @@
 		max-height: 390px;
 	}
 	/* GALLERY */
-	.swiper-gallery__title {
-		bottom: 20px;
-	}
 	.gallery-slide__img {
 		height: 480px;
 	}
