@@ -12,6 +12,14 @@
 	.promo-about__inner:hover .promo-about__btn {
 		opacity: 1;
 	}
+	/* SOCIAL */
+	.social__link:hover {
+		color: var(--color-olive);
+	}
+	/* FOOTER */
+	.footer__link:hover {
+		color: var(--color-olive);
+	}
 }
 /* HERO BLOCK */
 @media (orientation: portrait) {
@@ -264,13 +272,13 @@
 	p {
 		font-size: 12px;
 	}
-	br {
-		display: none;
-	}
 	.link--primary {
 		width: 100%;
 	}
 	/* HERO */
+	.hero__title br {
+		display: none;
+	}
 	.hero__content {
 		max-width: 100%;
 	}
@@ -301,6 +309,17 @@
 	/* GALLERY */
 	.gallery-slide__img {
 		height: 480px;
+	}
+	/* SOCIAL */
+	.social__items {
+		flex-direction: column;
+		align-items: center;
+	}
+	/* FOOTER */
+	.footer__info {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
 	}
 }
 @media (max-width: 390px) {
