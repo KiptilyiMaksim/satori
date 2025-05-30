@@ -1,0 +1,138 @@
+/* HEADER */
+.header .burger-menu__line {
+	background-color: var(--color-dark);
+}
+.header {
+	background-color: var(--color-white);
+}
+.header.scrolled {
+	transition: none;
+}
+/* SELECTING */
+.selecting {
+	position: relative;
+	color: var(--color-white-accent);
+	margin-top: 90px;
+	background-image: url("/img/booking-page/selecting/selecting-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: calc(100vh - 90px);
+	width: 100%;
+}
+.selecting__wrapper {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	max-width: 890px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+}
+.selecting__header {
+	text-align: center;
+}
+.selecting__text {
+	color: inherit;
+}
+.selecting__form {
+	display: flex;
+	justify-content: space-between;
+}
+.selecting-input__container {
+	position: relative;
+	max-width: 165px;
+}
+.selecting-input__container::after {
+	content: url("/img/icons/calendar.svg");
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.selecting-form__input {
+	position: relative;
+	z-index: 1;
+	background: none;
+	border: none;
+	color: var(--color-white);
+	border-bottom: 2px solid var(--color-white);
+	padding: 0px 1px 5px;
+}
+.selecting-form__input::placeholder {
+	color: var(--color-white);
+}
+.selecting-form__input:focus {
+	outline: 0;
+}
+.selecting-form__input:hover {
+	cursor: pointer;
+}
+/* тест */
+.custom-select {
+	position: relative;
+	width: 220px;
+	height: 20px;
+}
+.select-header {
+	padding: 0px 1px 5px;
+	border-bottom: 2px solid var(--color-white);
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: none;
+}
+.header-text {
+	text-transform: lowercase;
+}
+.arrow {
+	transition: transform 0.2s;
+}
+.select-dropdown {
+	margin-top: 14px;
+	display: none;
+	position: absolute;
+	width: 100%;
+	border-radius: 10px;
+	background: white;
+	z-index: 10;
+	max-height: 200px;
+	overflow-y: auto;
+}
+.select-item {
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 500;
+}
+.select-item:last-child {
+	border-bottom: none;
+}
+.item-name {
+	color: var(--color-dark);
+}
+.counter-container {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+.counter-btn {
+	padding: 6px 3px;
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+.item-counter {
+	color: var(--color-dark);
+}
+/* Анимация стрелки при открытии */
+.custom-select.active .arrow {
+	transform: rotate(180deg);
+}
+.custom-select.active .select-dropdown {
+	display: block;
+}
