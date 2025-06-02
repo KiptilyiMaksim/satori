@@ -13,7 +13,7 @@
 	position: relative;
 	color: var(--color-white-accent);
 	margin-top: 90px;
-	background-image: url("../img/booking-page/selecting/selecting-bg.jpg");
+	background-image: url("img/booking-page/selecting/selecting-bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -46,7 +46,7 @@
 	max-width: 165px;
 }
 .selecting-input__container::after {
-	content: url("../img/icons/calendar.svg");
+	content: url("img/icons/calendar.svg");
 	position: absolute;
 	right: 0;
 	top: 0;
