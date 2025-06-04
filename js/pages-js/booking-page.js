@@ -53,3 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	updateHeader();
 });
+
+// meal plan dropdawn
+document.querySelectorAll('.dropdown li button').forEach(button => {
+	button.addEventListener('click', (eee) => {
+		eee.preventDefault(); // На всякий случай предотвращаем дефолтное поведение
+		const dropdown = button.closest('.dropdown');
+		dropdown.querySelector('summary').textContent = button.textContent;
+		dropdown.removeAttribute('open'); // Закрываем dropdown после выбора
+	});
+});
