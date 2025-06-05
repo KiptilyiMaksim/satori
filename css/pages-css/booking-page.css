@@ -22,7 +22,7 @@
 }
 .selecting__wrapper {
 	position: absolute;
-	top: 20%;
+	top: 15%;
 	left: 0;
 	right: 0;
 	max-width: 890px;
@@ -74,6 +74,90 @@
 .custom-select {
 	position: relative;
 	width: 220px;
+}
+
+.select-header {
+	position: relative;
+	padding: 0 1px 5px;
+	border: none;
+	border-bottom: 2px solid var(--color-white);
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: none;
+	margin-bottom: 14px;
+	width: 100%;
+	text-align: left;
+	color: inherit;
+	font: inherit;
+}
+
+.select-header::after {
+	content: url(../../img/icons/arrow-toggle.svg);
+	display: inline-block;
+	margin-left: 8px;
+	transition: transform 0.3s ease;
+}
+
+.custom-select[aria-expanded="true"] .select-header::after {
+	transform: rotate(180deg);
+}
+
+.header-text {
+	text-transform: lowercase;
+}
+
+.select-dropdown {
+	display: none;
+	position: absolute;
+	width: 100%;
+	border-radius: 10px;
+	color: var(--color-dark);
+	background-color: var(--color-white);
+	z-index: 10;
+	max-height: 200px;
+}
+
+.custom-select[aria-expanded="true"] .select-dropdown {
+	display: block;
+}
+
+.select-item {
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 500;
+}
+
+/* .item-name {
+} */
+
+.counter-container {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.counter-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+.item-counter {
+	width: 20px;
+	text-align: center;
+}
+
+/* .counter-btn:focus {
+	outline: 2px solid var(--color-dark);
+	outline-offset: 2px;
+} */
+/* .custom-select {
+	position: relative;
+	width: 220px;
 	height: 20px;
 }
 .select-header {
@@ -85,6 +169,17 @@
 	align-items: center;
 	background: none;
 	margin-bottom: 14px;
+}
+
+.select-header::after {
+	content: url(../../img/icons/arrow-toggle.svg);
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: transform 0.3s ease;
+}
+.custom-select[active] .select-header::after {
+	transform: rotate(180deg);
 }
 .header-text {
 	text-transform: lowercase;
@@ -128,7 +223,7 @@
 }
 .item-counter {
 	color: var(--color-dark);
-}
+} */
 /* Анимация стрелки при открытии */
 .custom-select.active .arrow {
 	transform: rotate(180deg);
@@ -170,6 +265,16 @@
 	list-style: none;
 	margin-bottom: 14px;
 }
+.dropdown summary::after {
+	content: url(../../img/icons/arrow-toggle.svg);
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: transform 0.3s ease;
+}
+.dropdown[open] summary::after {
+	transform: rotate(180deg);
+}
 .dropdown ul {
 	display: flex;
 	flex-direction: column;
@@ -190,6 +295,7 @@
 	background: none;
 	border: none;
 	cursor: pointer;
+	transition: color 0.2s ease-in;
 }
 .dropdown li button:hover {
 	color: var(--color-olive);

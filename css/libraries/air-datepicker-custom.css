@@ -1,0 +1,64 @@
+@media (hover: hover) {
+	.air-datepicker-nav--title:hover {
+		--adp-background-color-hover: var(--color-hover);
+	}
+	.air-datepicker-nav--action:hover {
+		--adp-background-color-hover: var(--color-hover);
+	}
+}
+.air-datepicker {
+	--adp-width: 340px;
+	--adp-padding: 16px;
+
+	padding: var(--adp-padding);
+}
+.air-datepicker--pointer {
+	display: none;
+}
+.air-datepicker-nav {
+	--adp-padding: 0;
+	border-bottom: 0;
+}
+.air-datepicker-nav--action {
+	position: relative;
+	order: 1;
+}
+.air-datepicker-nav--action[data-action="prev"] {
+	position: absolute;
+	right: 50px;
+}
+.air-datepicker--content {
+	--adp-padding: 0;
+}
+.air-datepicker-nav--action path {
+	--adp-nav-arrow-color: var(--color-dark);
+	stroke: var(--adp-nav-arrow-color);
+}
+.air-datepicker-body--day-names {
+	--adp-day-name-color: var(--color-olive-light);
+	min-height: var(--adp-nav-height);
+}
+.air-datepicker-body--day-name {
+	font-size: 12px;
+	font-weight: 500;
+}
+.air-datepicker-body--cells {
+	--adp-day-cell-height: 44px;
+}
+.air-datepicker-cell {
+	--adp-cell-border-radius: 50%;
+	margin: 2px;
+	font-weight: 600;
+}
+.air-datepicker-cell.-selected- {
+	--adp-cell-background-color-selected: var(--color-olive);
+}
+.air-datepicker-cell.-current- {
+	--adp-color-current-date: var(--color-olive-light);
+}
+.air-datepicker-cell.-selected-.-focus- {
+	--adp-cell-background-color-selected-hover: var(--color-olive);
+}
+.air-datepicker-cell.-focus- {
+	--adp-cell-background-color-hover: var(--color-hover);
+}
