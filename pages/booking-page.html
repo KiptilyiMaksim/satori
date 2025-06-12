@@ -14,28 +14,16 @@
 		href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap"
 		rel="stylesheet">
 	<!-- CSS -->
-	<!-- lb -->
+	<!-- dateoicker -->
 	<link rel="stylesheet" href="../css/libraries/air-datepicker.css">
 	<link rel="stylesheet" href="../css/libraries/air-datepicker-custom.css">
-	<!-- styles -->
+	<!-- main styles -->
 	<link rel="stylesheet" href="../css/utilities.css">
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/variables.css">
 	<link rel="stylesheet" href="../css/pages-css/booking-page.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/media.css">
-
-
-	<!--  -->
-	<!-- <link rel="stylesheet" href="/css/libraries/air-datepicker.css"> -->
-	<!-- styles -->
-	<!-- <link rel="stylesheet" href="/css/pages-css/booking-page.css">
-	<link rel="stylesheet" href="/css/utilities.css">
-	<link rel="stylesheet" href="/css/reset.css">
-	<link rel="stylesheet" href="/css/variables.css">
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/media.css"> -->
-
 </head>
 
 <body>
@@ -63,7 +51,7 @@
 			</div>
 		</div>
 	</header>
-	<main>
+	<main class="main">
 		<section class="selecting main-section">
 			<div class="container">
 				<div class="selecting__wrapper">
@@ -413,41 +401,7 @@
 		</div>
 	</footer>
 	<script src="../js/libraries/air-datepicker.js"></script>
+	<script src="../js/libraries/air-datepicker-options.js"></script>
 	<script src="../js/pages-js/booking-page.js"></script>
 	<script src="../js/main.js"></script>
-
-	<script>
-		let dpMin = new AirDatepicker('#air-datepicker-1', {
-			locale: {
-				days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-				daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-				daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-				months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-				monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-			},
-			dateFormat: 'dd/MM/yyyy',
-			keyboardNav: true,
-			onSelect({ date }) {
-				dpMax.update({
-					minDate: date
-				});
-			}
-		});
-		let dpMax = new AirDatepicker('#air-datepicker-2', {
-			locale: {
-				days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-				daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-				daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-				months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-				monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-			},
-			dateFormat: 'dd/MM/yyyy',
-			keyboardNav: true,
-			onSelect({ date }) {
-				dpMin.update({
-					maxDate: date
-				});
-			}
-		});
-	</script>
 </body>
