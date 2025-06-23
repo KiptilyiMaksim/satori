@@ -69,12 +69,6 @@
 	position: relative;
 	width: 220px;
 }
-/* details summary {
-	list-style-type: none;
-}
-details summary::-webkit-details-marker {
-	display: none;
-} */
 .selecting-guests__box {
 	display: flex;
 	justify-content: space-between;
@@ -118,6 +112,10 @@ details summary::-webkit-details-marker {
 	display: flex;
 	gap: 12px;
 	align-items: center;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 .selecting-counter__btn {
 	cursor: pointer;
@@ -149,25 +147,18 @@ details summary::-webkit-details-marker {
 	transform: rotate(180deg);
 }
 .selecting-plan__dropdown {
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	position: absolute;
 	width: 100%;
-	padding: 0;
-	margin: 0;
-	background: white;
 	border-radius: 10px;
 	background-color: var(--color-white);
 	padding: 20px;
-	list-style: none;
 }
 .selecting-plan__item {
-	color: black;
+	color: var(--color-dark);
 	width: 100%;
-	text-align: left;
-	background: none;
-	border: none;
 	cursor: pointer;
 	transition: color 0.2s ease-in;
 }
