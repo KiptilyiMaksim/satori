@@ -84,7 +84,7 @@ p {
 .booking-select {
 	background: none;
 	border: none;
-	list-style: none;
+	list-style-type: none !important;
 	cursor: pointer;
 	padding: 0px 1px 5px;
 	border-bottom: 2px solid var(--color-white);
