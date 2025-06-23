@@ -88,8 +88,8 @@ p {
 	padding: 0px 1px 5px;
 	border-bottom: 2px solid var(--color-white);
 	font-weight: 500;
+	list-style-type: none;
 }
-/* .booking-select details summary {
-
+.booking-select::-webkit-details-marker {
+	display: none;
 }
-.booking-select */
