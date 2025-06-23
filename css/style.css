@@ -108,6 +108,7 @@ a {
 /* HERO */
 .hero {
 	height: 100vh;
+	margin-bottom: var(--margin-bottom-section);
 }
 .hero__content {
 	max-width: 51%;
@@ -166,14 +167,17 @@ a {
 	object-fit: cover;
 }
 /* ABOUT */
+.about {
+	margin-bottom: var(--margin-bottom-section);
+}
 .about__info {
 	position: relative;
-	margin-bottom: 100px;
+	margin-bottom: var(--margin-bottom-section);
 }
-/* ANIMATION */
-.animated__block {
-	transition: all 1s ease-out;
-	opacity: 0;
+.about__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .about__title {
 	margin-bottom: 80px;
@@ -188,14 +192,17 @@ a {
 .about__item {
 	max-width: 197px;
 }
+.item-about__title {
+	margin-bottom: var(--margin-bottom-title-h2);
+}
+/* ABOUT-ANIMATION */
+.animated__block {
+	transition: all 1s ease-out;
+	opacity: 0;
+}
 .animated {
 	opacity: 1;
 	transform: translateY(0);
-}
-.about__inner {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 /* ABOUT-PROMO */
 .promo-about {
@@ -239,6 +246,9 @@ a {
 	opacity: 0;
 }
 /* FACILITIES */
+.facilities {
+	margin-bottom: var(--margin-bottom-section);
+}
 .facilities__title {
 	text-align: center;
 	text-transform: uppercase;
@@ -318,8 +328,14 @@ a {
 	color: var(--color-white);
 }
 /* ROOM */
+.room {
+	margin-bottom: var(--margin-bottom-section);
+}
 .room__header {
-	margin-bottom: 100px;
+	margin-bottom: var(--margin-bottom-section);
+}
+.room__title {
+	margin-bottom: var(--margin-bottom-title-h2);
 }
 .room__text {
 	max-width: 630px;
@@ -328,6 +344,9 @@ a {
 }
 .room__btn {
 	transition: all 0.5s;
+}
+#room-cards--swipe {
+	scroll-margin-block: 100px;
 }
 .room__card {
 	position: relative;
@@ -377,8 +396,14 @@ a {
 	object-fit: cover;
 }
 /* GALLERY */
+.gallery {
+	margin-bottom: var(--margin-bottom-section);
+}
 .gallery__header {
 	padding: 0px max(20px, calc((100% - 1280px) / 2));
+}
+.gallery__title {
+	margin-bottom: var(--margin-bottom-title-h2);
 }
 .gallery__text {
 	max-width: 414px;
@@ -407,9 +432,10 @@ a {
 /* CONTACTS */
 .contacts {
 	text-align: center;
+	margin-bottom: var(--margin-bottom-section);
 }
 .contacts-title {
-	margin-bottom: 40px;
+	margin-bottom: var(--margin-bottom-title-h2);
 }
 .contacts__address {
 	font-style: normal;
@@ -430,8 +456,14 @@ a {
 	width: 100%;
 }
 /* SOCIALS */
+.social {
+	margin-bottom: var(--margin-bottom-section);
+}
 .social__header {
 	margin-bottom: 80px;
+}
+.social__title {
+	margin-bottom: var(--margin-bottom-title-h2);
 }
 .social__text {
 	max-width: 414px;

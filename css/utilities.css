@@ -3,18 +3,12 @@
 	margin: 0 auto;
 	padding: 0 20px;
 }
-.main-section {
-	margin-bottom: 100px;
-}
 .main-section__header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	margin-bottom: 100px;
-}
-.title-h2 {
-	margin-bottom: 30px;
 }
 h1 {
 	font-family: var(--font-family-heading);
@@ -60,12 +54,13 @@ p {
 	justify-content: center;
 	align-items: center;
 	gap: 14px;
-	width: 179px;
+	width: max-content;
 	padding: 10px 20px;
 	border: 1px solid var(--color-dark);
 	border-radius: 60px;
 	color: var(--color-dark);
 	stroke: var(--color-dark);
+	cursor: pointer;
 }
 .link-text--primary {
 	font-family: var(--font-family-heading);
@@ -79,6 +74,19 @@ p {
 	height: 16px;
 	transition: all 0.5s;
 }
-#room-cards--swipe {
-	scroll-margin-block: 100px;
+/* PAGE/booking-page */
+.selecting-form__inner {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+.booking-select {
+	background: none;
+	border: none;
+	list-style: none;
+	cursor: pointer;
+	padding: 0px 1px 5px;
+	border-bottom: 2px solid var(--color-white);
+	font-weight: 500;
 }

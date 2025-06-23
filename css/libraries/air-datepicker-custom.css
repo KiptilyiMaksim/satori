@@ -9,8 +9,8 @@
 }
 .air-datepicker {
 	--adp-width: 340px;
+	--adp-border-radius: 6px;
 	--adp-padding: 16px;
-
 	padding: var(--adp-padding);
 }
 .air-datepicker--pointer {
@@ -37,18 +37,24 @@
 }
 .air-datepicker-nav--title {
 	--adp-border-radius: 18px;
+	font-weight: 500;
+	color: var(--color-dark);
+}
+.air-datepicker-nav--title i {
+	color: var(--color-dark);
 }
 .air-datepicker--content {
 	--adp-padding: 0;
 }
 .air-datepicker-body--day-names {
-	--adp-day-name-color: var(--color-olive-light);
 	min-height: var(--adp-nav-height);
 	margin: 0;
 }
 .air-datepicker-body--day-name {
+	--adp-day-name-color: var(--color-olive-light);
 	font-size: 12px;
 	font-weight: 500;
+	text-transform: capitalize;
 }
 .air-datepicker-body--cells {
 	--adp-day-cell-height: 48px;

@@ -1,0 +1,32 @@
+@media (hover: hover) {
+	.selecting-plan__item:hover {
+		color: var(--color-olive);
+	}
+}
+@media (max-width: 1024px) {
+	.selecting__title {
+		--margin-bottom-title-h2: 30px;
+	}
+	.selecting__wrapper {
+		inset: 5% 0px 0px;
+	}
+	.selecting__form {
+		flex-direction: column;
+	}
+	.selecting-form__inner {
+		flex-direction: column;
+		align-items: center;
+	}
+	.selecting__details {
+		gap: 26px;
+	}
+}
+@media (max-width: 768px) {
+	.selecting__title {
+		font-size: 28px;
+	}
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 390px) {
+}

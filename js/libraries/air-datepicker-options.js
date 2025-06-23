@@ -6,13 +6,26 @@ let dpMin = new AirDatepicker('#air-datepicker-1', {
 		months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 		monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 	},
-	dateFormat: 'dd/MM/yyyy',
-	keyboardNav: true,
+	isMobile: window.innerWidth < 1024,
+	onShow(isFinished) {
+		if (!isFinished) {
+			this.update({
+				isMobile: window.innerWidth < 1024
+			});
+		}
+	},
 	onSelect({ date }) {
 		dpMax.update({
 			minDate: date
 		});
-	}
+	},
+	navTitles: {
+		days: 'MMMM <i>yyyy</i>'
+	},
+	dateFormat: 'dd/MM/yyyy',
+	keyboardNav: true,
+	disableNavWhenOutOfRange: true,
+	autoClose: true
 });
 let dpMax = new AirDatepicker('#air-datepicker-2', {
 	locale: {
@@ -22,11 +35,30 @@ let dpMax = new AirDatepicker('#air-datepicker-2', {
 		months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 		monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 	},
-	dateFormat: 'dd/MM/yyyy',
-	keyboardNav: true,
+	isMobile: window.innerWidth < 1024,
+	onShow(isFinished) {
+		if (!isFinished) {
+			this.update({
+				isMobile: window.innerWidth < 1024
+			});
+		}
+	},
 	onSelect({ date }) {
 		dpMin.update({
 			maxDate: date
 		});
-	}
+	},
+	navTitles: {
+		days: 'MMMM <i>yyyy</i>'
+	},
+	dateFormat: 'dd/MM/yyyy',
+	keyboardNav: true,
+	disableNavWhenOutOfRange: true,
+	autoClose: true,
+	// 
+});
+window.addEventListener('resize', function () {
+	const isMobile = window.innerWidth < 1024;
+	dpMin.update({ isMobile });
+	dpMax.update({ isMobile });
 });

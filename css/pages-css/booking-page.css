@@ -12,7 +12,7 @@
 .selecting {
 	position: relative;
 	color: var(--color-white-accent);
-	margin-top: 90px;
+	margin: 90px 0px var(--margin-bottom-section);
 	background-image: url("../../img/booking-page/selecting/selecting-bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -22,66 +22,57 @@
 }
 .selecting__wrapper {
 	position: absolute;
-	top: 13%;
-	left: 0;
-	right: 0;
-	max-width: 890px;
+	inset: 17% 0px 0px;
+	max-width: 930px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	gap: 100px;
+	padding: 0px 20px;
 }
 .selecting__header {
 	text-align: center;
+	margin-bottom: var(--margin-bottom-section);
+}
+.selecting__title {
+	margin-bottom: var(--margin-bottom-title-h2);
 }
 .selecting__text {
 	color: inherit;
 }
+/* FORM */
 .selecting__form {
 	display: flex;
 	justify-content: space-between;
+	gap: 40px;
+	margin-bottom: 66px;
 }
-.selecting-input__container {
+.selecting-date__box {
 	position: relative;
 	max-width: 165px;
 }
-.selecting-input__container::after {
+.selecting-date__box::after {
 	content: url("../../img/icons/calendar.svg");
 	position: absolute;
 	right: 0;
 	top: 0;
 	bottom: 0;
 }
-.selecting-form__input {
+.selecting-date__input {
 	position: relative;
 	z-index: 1;
-	background: none;
-	border: none;
-	color: var(--color-white);
-	border-bottom: 2px solid var(--color-white);
-	padding: 0px 1px 5px;
+	color: inherit;
 }
-.selecting-form__input::placeholder {
-	color: var(--color-white);
+.selecting-date__input::placeholder {
+	color: inherit;
 }
-.selecting-form__input:focus {
+.selecting-date__input:focus {
 	outline: 0;
 }
-.selecting-form__input:hover {
-	cursor: pointer;
-}
-/* тест */
-.custom-select {
+.selecting__guests {
 	position: relative;
 	width: 220px;
 }
-
-.select-header {
-	position: relative;
-	padding: 0 1px 5px;
-	border: none;
-	border-bottom: 2px solid var(--color-white);
-	cursor: pointer;
+.selecting-guests__box {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -92,24 +83,19 @@
 	color: inherit;
 	font: inherit;
 }
-
-.select-header::after {
+.selecting-guests__box::after {
 	content: url(../../img/icons/arrow-toggle.svg);
 	display: inline-block;
 	margin-left: 8px;
 	transition: transform 0.3s ease;
 }
-
-.custom-select[aria-expanded="true"] .select-header::after {
+.selecting__guests[open] .selecting-guests__box::after {
 	transform: rotate(180deg);
 }
-
-.header-text {
+.selecting-guests__text {
 	text-transform: lowercase;
 }
-
-.select-dropdown {
-	display: none;
+.selecting-guests__dropdown {
 	position: absolute;
 	width: 100%;
 	border-radius: 10px;
@@ -118,164 +104,49 @@
 	z-index: 10;
 	max-height: 200px;
 }
-
-.custom-select[aria-expanded="true"] .select-dropdown {
-	display: block;
-}
-
-.select-item {
+.selecting-guests__item {
 	margin: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	font-weight: 500;
 }
-
-/* .item-name {
-} */
-
-.counter-container {
+.selecting-guests__counter {
 	display: flex;
 	gap: 12px;
 	align-items: center;
 }
-
-.counter-btn {
-	padding: 5px;
+.selecting-counter__btn {
 	cursor: pointer;
 	background: none;
 	border: none;
 }
-.item-counter {
+.selecting-counter__item {
 	width: 20px;
 	text-align: center;
 }
-
-/* .counter-btn:focus {
-	outline: 2px solid var(--color-dark);
-	outline-offset: 2px;
-} */
-/* .custom-select {
+.selecting__guests.active .arrow {
+	transform: rotate(180deg);
+}
+.selecting-plan {
 	position: relative;
 	width: 220px;
-	height: 20px;
 }
-.select-header {
-	padding: 0px 1px 5px;
-	border-bottom: 2px solid var(--color-white);
-	cursor: pointer;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: none;
+.selecting-plan__box {
+	/* 3 */
 	margin-bottom: 14px;
 }
-
-.select-header::after {
+.selecting-plan__box::after {
 	content: url(../../img/icons/arrow-toggle.svg);
 	position: absolute;
 	right: 0;
 	top: 0;
 	transition: transform 0.3s ease;
 }
-.custom-select[active] .select-header::after {
+.selecting-plan[open] .selecting-plan__box::after {
 	transform: rotate(180deg);
 }
-.header-text {
-	text-transform: lowercase;
-}
-.arrow {
-	transition: transform 0.2s;
-}
-.select-dropdown {
-	display: none;
-	position: absolute;
-	width: 100%;
-	border-radius: 10px;
-	background: white;
-	z-index: 10;
-	max-height: 200px;
-	overflow-y: auto;
-}
-.select-item {
-	margin: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	font-weight: 500;
-}
-.select-item:last-child {
-	border-bottom: none;
-}
-.item-name {
-	color: var(--color-dark);
-}
-.counter-container {
-	display: flex;
-	gap: 12px;
-	align-items: center;
-}
-.counter-btn {
-	padding: 6px 3px;
-	cursor: pointer;
-	background: none;
-	border: none;
-}
-.item-counter {
-	color: var(--color-dark);
-} */
-/* Анимация стрелки при открытии */
-.custom-select.active .arrow {
-	transform: rotate(180deg);
-}
-.custom-select.active .select-dropdown {
-	display: block;
-}
-/* .selecting-form__select {
-	width: 220px;
-	color: var(--color-white);
-	padding: 0px 1px 5px;
-	border: none;
-	border-bottom: 2px solid var(--color-white);
-	cursor: pointer;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: none;
-}
-.selecting-form__select:focus {
-	outline: 0;
-}
-.selecting-form__option {
-	color: var(--color-dark);
-}
-.selecting-form__option:hover {
-	margin-top: 40px;
-	cursor: pointer;
-	background-color: var(--color-olive);
-} */
-.dropdown {
-	position: relative;
-	width: 220px;
-}
-.dropdown summary {
-	padding-bottom: 5px;
-	border-bottom: 2px solid var(--color-white);
-	cursor: pointer;
-	list-style: none;
-	margin-bottom: 14px;
-}
-.dropdown summary::after {
-	content: url(../../img/icons/arrow-toggle.svg);
-	position: absolute;
-	right: 0;
-	top: 0;
-	transition: transform 0.3s ease;
-}
-.dropdown[open] summary::after {
-	transform: rotate(180deg);
-}
-.dropdown ul {
+.selecting-plan__dropdown {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -289,7 +160,8 @@
 	padding: 20px;
 	list-style: none;
 }
-.dropdown li button {
+.selecting-plan__item {
+	color: black;
 	width: 100%;
 	text-align: left;
 	background: none;
@@ -297,6 +169,14 @@
 	cursor: pointer;
 	transition: color 0.2s ease-in;
 }
-.dropdown li button:hover {
-	color: var(--color-olive);
+.selecting__btn {
+	margin: 0 auto;
+	color: var(--color-white);
+	border-color: var(--color-white);
+}
+.selecting-btn__arrow {
+	stroke: var(--color-white);
+}
+#room--swipe {
+	scroll-margin-block: 100px;
 }

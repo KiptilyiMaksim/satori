@@ -8,6 +8,7 @@
 		border-color: var(--color-olive);
 		color: var(--color-white-accent);
 		stroke: var(--color-white-accent);
+		transition: all 0.2s ease-in;
 	}
 	.promo-about__inner:hover .promo-about__btn {
 		opacity: 1;
@@ -137,12 +138,12 @@
 }
 /* MAIN MEDIA */
 @media (max-width: 1024px) {
+	:root {
+		--margin-bottom-title-h2: 24px;
+	}
 	/* BASE Style */
 	h1 {
 		font-size: 30px;
-	}
-	.title-h2 {
-		font-size: 24px;
 	}
 	.card-heading {
 		font-size: 18px;
@@ -262,10 +263,10 @@
 	}
 }
 @media (max-width: 480px) {
-	/* BASE Style */
-	.main-section {
-		margin-bottom: 80px;
+	:root {
+		--margin-bottom-section: 80px;
 	}
+	/* BASE Style */
 	h2 {
 		font-size: 24px;
 	}

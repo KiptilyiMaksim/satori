@@ -1,60 +1,46 @@
 document.addEventListener('DOMContentLoaded', () => {
 	const MAX_VALUE = 10;
+	const allDetails = document.querySelectorAll('details');
 
-	// Закрытие всех открытых dropdown при клике вне их области
-	document.addEventListener('click', (e) => {
-		// Закрываем custom-select
-		const select = document.querySelector('.custom-select');
-		if (!select.contains(e.target)) {
-			select.setAttribute('aria-expanded', 'false');
-		}
+	// Инициализация гостевого выбора
+	const guestsSelect = document.querySelector('.selecting__guests');
+	const guestsSummary = guestsSelect.querySelector('.selecting-guests__box');
+	const guestsText = guestsSelect.querySelector('.selecting-guests__text');
+	const guestsDropdown = guestsSelect.querySelector('.selecting-guests__dropdown');
+	const counters = guestsSelect.querySelectorAll('.selecting-counter__item');
 
-		// Закрываем meal plan dropdown
-		const isDropdownClick = e.target.closest('.dropdown');
-		if (!isDropdownClick) {
-			document.querySelectorAll('.dropdown[open]').forEach(dropdown => {
-				dropdown.removeAttribute('open');
-			});
-		}
-	});
+	// Инициализация dropdown с meal plan
+	const mealDropdown = document.querySelector('.selecting-plan');
+	const mealSummary = mealDropdown.querySelector('summary');
+	const mealOptions = mealDropdown.querySelectorAll('.selecting-plan__item');
 
-	// Custom select логика
-	const select = document.querySelector('.custom-select');
-	const header = select.querySelector('.select-header');
-	const headerText = select.querySelector('.header-text');
-	const dropdown = select.querySelector('.select-dropdown');
-
-	const updateHeader = () => {
-		const items = Array.from(dropdown.querySelectorAll('.select-item'));
-		const allValues = items.map(item => {
-			const name = item.querySelector('.item-name').textContent;
-			const counter = item.querySelector('.item-counter').textContent;
-			return `${counter} ${name}`;
+	// Функция закрытия других details
+	const closeOtherDetails = (currentDetails) => {
+		allDetails.forEach(details => {
+			if (details !== currentDetails && details.open) {
+				details.open = false;
+			}
 		});
-		headerText.textContent = allValues.join(', ') || '0 room, 0 guests, 0 children';
 	};
 
-	header.addEventListener('click', (e) => {
-		e.stopPropagation();
-		const isOpen = select.getAttribute('aria-expanded') === 'true';
-		select.setAttribute('aria-expanded', !isOpen);
-
-		// Закрываем meal plan dropdown при открытии этого
-		document.querySelectorAll('.dropdown[open]').forEach(dropdown => {
-			dropdown.removeAttribute('open');
+	// Обновление текста в summary гостевого выбора
+	const updateGuestsText = () => {
+		const values = Array.from(counters).map(counter => {
+			const name = counter.closest('.selecting-guests__item').querySelector('.selecting-guests__name').textContent;
+			return `${counter.textContent} ${name}`;
 		});
-	});
+		guestsText.textContent = values.join(', ') || '0 room, 0 guests, 0 children';
+	};
 
-	dropdown.addEventListener('click', (e) => {
-		const btn = e.target.closest('.counter-btn');
+	// Обработчик для кнопок +/-
+	guestsDropdown.addEventListener('click', (e) => {
+		const btn = e.target.closest('.selecting-counter__btn');
 		if (!btn) return;
-
 		e.preventDefault();
+		e.stopPropagation();
 
-		const item = btn.closest('.select-item');
-		const counter = item.querySelector('.item-counter');
+		const counter = btn.closest('.selecting-guests__item').querySelector('.selecting-counter__item');
 		let value = parseInt(counter.textContent);
-
 		if (btn.dataset.action === 'increase' && value < MAX_VALUE) {
 			value++;
 		} else if (btn.dataset.action === 'decrease' && value > 0) {
@@ -62,27 +48,47 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 
 		counter.textContent = value;
-		updateHeader();
+		updateGuestsText();
 	});
 
-	// Meal plan dropdown логика
-	document.querySelectorAll('.dropdown li button').forEach(button => {
-		button.addEventListener('click', (e) => {
-			e.preventDefault();
-			const dropdown = button.closest('.dropdown');
-			dropdown.querySelector('summary').textContent = button.textContent;
-			dropdown.removeAttribute('open');
-		});
-	});
-
-	document.querySelectorAll('.dropdown').forEach(dropdown => {
-		dropdown.addEventListener('click', (e) => {
+	// Обработчик выбора meal plan
+	mealOptions.forEach(option => {
+		option.addEventListener('click', (e) => {
 			e.stopPropagation();
-
-			// Закрываем custom-select при открытии этого dropdown
-			document.querySelector('.custom-select').setAttribute('aria-expanded', 'false');
+			mealSummary.textContent = e.target.textContent;
+			mealDropdown.open = false;
 		});
 	});
 
-	updateHeader();
+	// Обработчик для всех details
+	allDetails.forEach(details => {
+		details.addEventListener('toggle', function () {
+			if (this.open) {
+				closeOtherDetails(this);
+			}
+		});
+
+		// Клик по summary
+		const summary = details.querySelector('summary');
+		summary.addEventListener('click', (e) => {
+			e.preventDefault();
+			details.open = !details.open;
+		});
+	});
+
+	// Закрытие при клике вне области
+	document.addEventListener('click', (e) => {
+		const clickedInsideAnyDetails = Array.from(allDetails).some(details =>
+			details.contains(e.target) || e.target === details
+		);
+
+		if (!clickedInsideAnyDetails) {
+			allDetails.forEach(details => {
+				details.open = false;
+			});
+		}
+	});
+
+	// Инициализация
+	updateGuestsText();
 });
