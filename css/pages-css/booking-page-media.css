@@ -20,6 +20,9 @@
 	.selecting-date__input {
 		touch-action: manipulation;
 	}
+	.selecting-date__input:focus {
+		outline: none;
+	}
 	.selecting__details {
 		gap: 26px;
 	}
