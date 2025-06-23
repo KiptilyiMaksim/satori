@@ -89,6 +89,7 @@ p {
 	border-bottom: 2px solid var(--color-white);
 	font-weight: 500;
 }
-.booking-select details > summary::marker {
-	list-style-type: none;
+/* .booking-select details summary {
+
 }
+.booking-select */
