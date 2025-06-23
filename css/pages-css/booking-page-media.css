@@ -17,6 +17,9 @@
 		flex-direction: column;
 		align-items: center;
 	}
+	.selecting-date__input {
+		touch-action: manipulation;
+	}
 	.selecting__details {
 		gap: 26px;
 	}
