@@ -69,12 +69,12 @@
 	position: relative;
 	width: 220px;
 }
-details summary {
+/* details summary {
 	list-style-type: none;
 }
 details summary::-webkit-details-marker {
 	display: none;
-}
+} */
 .selecting-guests__box {
 	display: flex;
 	justify-content: space-between;
