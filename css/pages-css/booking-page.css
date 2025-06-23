@@ -10,7 +10,6 @@
 }
 /* SELECTING */
 .selecting {
-	position: relative;
 	color: var(--color-white-accent);
 	margin: 90px 0px var(--margin-bottom-section);
 	background-image: url("../../img/booking-page/selecting/selecting-bg.jpg");
@@ -21,13 +20,11 @@
 	width: 100%;
 }
 .selecting__wrapper {
-	position: absolute;
-	inset: 17% 0px 0px;
 	max-width: 930px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	padding: 0px 20px;
+	padding: 100px 20px 0px;
 }
 .selecting__header {
 	text-align: center;
@@ -72,6 +69,11 @@
 	position: relative;
 	width: 220px;
 }
+.selecting__guests details::marker,
+.selecting-plan details::marker {
+	content: "";
+	list-style-type: none;
+}
 .selecting-guests__box {
 	display: flex;
 	justify-content: space-between;
@@ -84,7 +86,7 @@
 	font: inherit;
 }
 .selecting-guests__box::after {
-	content: url(../../img/icons/arrow-toggle.svg);
+	content: url("../../img/icons/arrow-toggle.svg");
 	display: inline-block;
 	margin-left: 8px;
 	transition: transform 0.3s ease;
@@ -133,11 +135,10 @@
 	width: 220px;
 }
 .selecting-plan__box {
-	/* 3 */
 	margin-bottom: 14px;
 }
 .selecting-plan__box::after {
-	content: url(../../img/icons/arrow-toggle.svg);
+	content: url("../../img/icons/arrow-toggle.svg");
 	position: absolute;
 	right: 0;
 	top: 0;
