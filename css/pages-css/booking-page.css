@@ -69,9 +69,8 @@
 	position: relative;
 	width: 220px;
 }
-.selecting__guests details::marker,
-.selecting-plan details::marker {
-	content: "";
+.selecting__guests details > summary::marker,
+.selecting-plan details > summary::marker {
 	list-style-type: none;
 }
 .selecting-guests__box {
