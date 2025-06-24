@@ -7,9 +7,9 @@ let dpMin = new AirDatepicker('#air-datepicker-1', {
 		monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 	},
 	isMobile: window.innerWidth < 1024,
-	onShow(isFinished) {
+	onShow: (isFinished) => {
 		if (!isFinished) {
-			this.update({
+			dpMin.update({
 				isMobile: window.innerWidth < 1024
 			});
 		}
@@ -36,9 +36,9 @@ let dpMax = new AirDatepicker('#air-datepicker-2', {
 		monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 	},
 	isMobile: window.innerWidth < 1024,
-	onShow(isFinished) {
+	onShow: (isFinished) => {
 		if (!isFinished) {
-			this.update({
+			dpMax.update({
 				isMobile: window.innerWidth < 1024
 			});
 		}
@@ -55,7 +55,6 @@ let dpMax = new AirDatepicker('#air-datepicker-2', {
 	keyboardNav: true,
 	disableNavWhenOutOfRange: true,
 	autoClose: true,
-	// 
 });
 window.addEventListener('resize', function () {
 	const isMobile = window.innerWidth < 1024;
