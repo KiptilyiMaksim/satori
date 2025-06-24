@@ -79,6 +79,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	gap: 40px;
+	height: 100%;
 }
 
 .booking-select {
@@ -86,7 +87,6 @@ p {
 	border: none;
 	cursor: pointer;
 	padding: 0px 1px 5px;
-	border-bottom: 2px solid var(--color-white);
 	font-weight: 500;
 	list-style-type: none;
 }

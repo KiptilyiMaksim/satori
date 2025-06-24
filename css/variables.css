@@ -15,4 +15,6 @@
 	/* INDENTATION */
 	--margin-bottom-section: 100px;
 	--margin-bottom-title-h2: 30px;
+	/* SELECTING */
+	--selecting-border-bottom: 2px solid var(--color-white);
 }

@@ -46,6 +46,7 @@
 .selecting-date__box {
 	position: relative;
 	max-width: 165px;
+	border-bottom: var(--selecting-border-bottom);
 }
 .selecting-date__box::after {
 	content: url("../../img/icons/calendar.svg");
@@ -79,6 +80,7 @@
 	text-align: left;
 	color: inherit;
 	font: inherit;
+	border-bottom: var(--selecting-border-bottom);
 }
 .selecting-guests__box::after {
 	content: url("../../img/icons/arrow-toggle.svg");
@@ -135,6 +137,7 @@
 }
 .selecting-plan__box {
 	margin-bottom: 14px;
+	border-bottom: var(--selecting-border-bottom);
 }
 .selecting-plan__box::after {
 	content: url("../../img/icons/arrow-toggle.svg");

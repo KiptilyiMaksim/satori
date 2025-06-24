@@ -19,11 +19,7 @@
 	}
 	.selecting-date__input {
 		touch-action: manipulation;
-		outline: unset;
 	}
-	/* .selecting-date__input:focus {
-		outline: unset;
-	} */
 	.selecting__details {
 		gap: 26px;
 	}
