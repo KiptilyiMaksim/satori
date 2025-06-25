@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+	.details__wrapper {
+		flex-direction: column;
+	}
+	.details {
+		margin: 130px 0px 120px;
+	}
+	.details__title {
+		--margin-bottom-title-h2: 20px;
+		margin-bottom: var(--margin-bottom-title-h2);
+	}
+	.details__wrapper {
+		position: relative;
+		gap: 0;
+	}
+	.details__info {
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
+	.details-link {
+		position: absolute;
+		left: 0;
+		bottom: -80px;
+		right: 0;
+	}
+	.details__check {
+		gap: 20px;
+		min-width: 100%;
+	}
+	.details-check__concept {
+		max-width: 100px;
+	}
+}
