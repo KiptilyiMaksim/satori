@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+	.main {
+		--margin-bottom-section: 40px;
+	}
 	.details__wrapper {
 		flex-direction: column;
 	}
@@ -27,7 +30,24 @@
 		gap: 20px;
 		min-width: 100%;
 	}
+	.details-check__text {
+		grid-template-columns: auto 220px;
+	}
 	.details-check__concept {
 		max-width: 100px;
+	}
+	/* SERVICES */
+	.services__box {
+		grid-template-columns: auto;
+		row-gap: 20px;
+	}
+	.services-facilities__wrapper {
+		flex-direction: column;
+		gap: 8px;
+	}
+}
+@media (max-width: 480px) {
+	.details-check__text {
+		grid-template-columns: auto 170px;
 	}
 }

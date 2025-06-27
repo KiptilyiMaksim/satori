@@ -14,6 +14,8 @@
 		href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap"
 		rel="stylesheet">
 	<!-- CSS -->
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.css">
 	<!-- main styles -->
 	<link rel="stylesheet" href="../../css/utilities.css">
 	<link rel="stylesheet" href="../../css/reset.css">
@@ -97,8 +99,104 @@
 				</div>
 			</div>
 		</section>
-		<section class="gallary"></section>
-		<section class="services"></section>
+		<section class="gallery">
+			<div class="gallery__swipers">
+				<div class="swiper swiper-gallery-1">
+					<h2 class="swiper-gallery__title">standard room</h2>
+					<div class="swiper-wrapper swiper-wrapper__gallery">
+						<div class="swiper-slide gallery-slide">
+							<img class="gallery-slide__img" src="../../img/rooms/standard-room/standard-room-1.jpg"
+								alt="standard room slide 1">
+						</div>
+						<div class="swiper-slide swiper-slide__gallery">
+							<img class="gallery-slide__img" src="../../img/rooms/standard-room/standard-room-2.jpg"
+								alt="standard room slide 2">
+						</div>
+						<div class="swiper-slide swiper-slide__gallery">
+							<img class="gallery-slide__img" src="../../img/rooms/standard-room/standard-room-3.jpg"
+								alt="standard room slide 3">
+						</div>
+						<div class="swiper-slide swiper-slide__gallery">
+							<img class="gallery-slide__img" src="../../img/rooms/standard-room/standard-room-4.jpg"
+								alt="standard room slide 4">
+						</div>
+					</div>
+					<div class="swiper-button-prev gallery-button-prew"><svg width="40" height="22" viewBox="0 0 40 22"
+							fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M29.7587 0.437513L39.5494 9.94375C40.1502 10.5271 40.1502 11.4729 39.5494 12.0562L29.7587 21.5625C29.1579 22.1458 28.1838 22.1458 27.583 21.5625C26.9822 20.9791 26.9822 20.0333 27.583 19.45L34.7474 12.4938H0V9.50624H34.7474L27.583 2.55001C26.9822 1.96666 26.9822 1.02086 27.583 0.437513C28.1838 -0.145838 29.1579 -0.145838 29.7587 0.437513Z"
+								fill="#F9F4EF" />
+						</svg>
+					</div>
+					<div class="swiper-button-next gallery-button-next"><svg width="40" height="22" viewBox="0 0 40 22"
+							fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M29.7587 0.437513L39.5494 9.94375C40.1502 10.5271 40.1502 11.4729 39.5494 12.0562L29.7587 21.5625C29.1579 22.1458 28.1838 22.1458 27.583 21.5625C26.9822 20.9791 26.9822 20.0333 27.583 19.45L34.7474 12.4938H0V9.50624H34.7474L27.583 2.55001C26.9822 1.96666 26.9822 1.02086 27.583 0.437513C28.1838 -0.145838 29.1579 -0.145838 29.7587 0.437513Z"
+								fill="#F9F4EF" />
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="services">
+			<div class="container">
+				<div class="services-wrapper">
+					<div class="services__box">
+						<article class="services-box__program">
+							<h4 class="services-program__title services-title">Room program</h4>
+							<ul class="services-program__items services-items">
+								<li class="services-program__item services-item">Breakfast 7:30-10:30</li>
+								<li class="services-program__item services-item">Spa-zone</li>
+								<li class="services-program__item services-item">Swimming pool</li>
+								<li class="services-program__item services-item">Gym</li>
+								<li class="services-program__item services-item">Room Service 11:00 - 15:00</li>
+							</ul>
+						</article>
+						<article class="services-box__facilities">
+							<h4 class="services-facilities__title services-title">Room Facilities</h4>
+							<div class="services-facilities__wrapper">
+								<ul class="services-facilities__items services-items">
+									<li class="services-facilities__item services-item">Private Bathrooms</li>
+									<li class="services-facilities__item services-item">Free WEFI</li>
+									<li class="services-facilities__item services-item">Air Conditioning</li>
+									<li class="services-facilities__item services-item">Room Service</li>
+									<li class="services-facilities__item services-item">Mini Fridge</li>
+								</ul>
+								<ul class="services-facilities__items services-items">
+									<li class="services-facilities__item services-item">Balcony</li>
+									<li class="services-facilities__item services-item">Coffee Maker</li>
+									<li class="services-facilities__item services-item">Mountain View</li>
+									<li class="services-facilities__item services-item">Iron and Ironing Board</li>
+									<li class="services-facilities__item services-item">Hair Dryer</li>
+								</ul>
+								<ul class="services-facilities__items services-items">
+									<li class="services-facilities__item services-item">Flat Screen TV</li>
+									<li class="services-facilities__item services-item">King Size Bed</li>
+									<li class="services-facilities__item services-item">High Speed Internet</li>
+									<li class="services-facilities__item services-item">Safe Box</li>
+									<li class="services-facilities__item services-item">Desk</li>
+								</ul>
+						</article>
+						<article class="services-box__extras">
+							<h4 class="services-extras__title services-title">Do you want to add extras?</h4>
+							<form class="services-extras__form">
+								<input class="services-extras__checkbox" type="checkbox" id="services-checkbox-1">
+								<label class="services-extras__label" for="services-checkbox-1">Baby cot/UAH 80</label>
+								<input class="services-extras__checkbox" type="checkbox" id="services-checkbox-2">
+								<label class="services-extras__label" for="services-checkbox-2">Extra towel/UAH 20</label>
+								<input class="services-extras__checkbox" type="checkbox" id="services-checkbox-3">
+								<label class="services-extras__label" for="services-checkbox-3">Extra slippers/UAH 20</label>
+								<input class="services-extras__checkbox" type="checkbox" id="services-checkbox-4">
+								<label class="services-extras__label" for="services-checkbox-4">Breakfast in room/UAH 50</label>
+								<input class="services-extras__checkbox" type="checkbox" id="services-checkbox-5">
+								<label class="services-extras__label" for="services-checkbox-5">Late check-out/UAH 50</label>
+							</form>
+					</div>
+					</article>
+				</div>
+			</div>
+			</div>
+		</section>
 	</main>
 	<footer class="footer">
 		<div class="container">
