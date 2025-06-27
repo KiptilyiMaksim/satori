@@ -4,9 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Satori</title>
+	<title>Satori - Standard room</title>
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="./img/icons/favicon.svg" type="image/x-icon">
+	<link rel="shortcut icon" href="../../img/icons/favicon.svg" type="image/x-icon">
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +17,13 @@
 	<!-- swiper -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.css">
 	<!-- main styles -->
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/variables.css">
-	<link rel="stylesheet" href="css/utilities.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="../../css/utilities.css">
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/variables.css">
+	<link rel="stylesheet" href="../../css/pages-css/room-page.css">
+	<link rel="stylesheet" href="../../css/pages-css/room-page-media.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/media.css">
 </head>
 
 <body>
@@ -29,17 +31,15 @@
 		<div class="container">
 			<div class="header__wrapper">
 				<nav class="header__nav">
-					<a class="logo__link" href="#"><img class="logo" src="./img/icons/logo.svg" alt="logo"></a>
+					<a class="logo__link" href="#"><img class="logo" src="../../img/icons/logo.svg" alt="logo"></a>
 					<ul class="header__menu menu-header">
 						<div class="menu-header__wrapper container">
 							<li class="menu-header__item"><a href="#" class="menu-header__link">MAIN</a></li>
-							<li class="menu-header__item"><a href="#about-scroll" class="menu-header__link">About us</a></li>
-							<li class="menu-header__item"><a href="#facilities-scroll" class="menu-header__link">Our
-									Facilities</a></li>
-							<li class="menu-header__item"><a href="#room-scroll" class="menu-header__link">Our Rooms</a></li>
-							<li class="menu-header__item"><a href="#gallery-scroll" class="menu-header__link">Gallery</a></li>
-							<li class="menu-header__item"><a href="#contacts-scroll" class="menu-header__link">Contacts</a>
-							</li>
+							<li class="menu-header__item"><a href="#" class="menu-header__link">About us</a></li>
+							<li class="menu-header__item"><a href="#" class="menu-header__link">Our Facilities</a></li>
+							<li class="menu-header__item"><a href="#" class="menu-header__link">Our Rooms</a></li>
+							<li class="menu-header__item"><a href="#" class="menu-header__link">Gallery</a></li>
+							<li class="menu-header__item"><a href="#" class="menu-header__link">Contacts</a></li>
 						</div>
 					</ul>
 				</nav>
@@ -52,611 +52,81 @@
 		</div>
 	</header>
 	<main class="main">
-		<section class="hero">
+		<section class="details">
 			<div class="container">
-				<div class="hero__wrapper">
-					<article class="hero__content">
-						<h1 class="hero__title">Spa-resort complex<br>
-							in the Carpathians</h1>
-						<p class="hero__subtitle subtitle">Find your serene retreat at our luxurious spa-resort, where <br>
-							modern comfort meets the timeless beauty of nature.</p>
-						<a href="./pages/booking-page.html" class="hero__link link--primary">
-							<span class="hero__text link-text--primary">Book a room</span>
-							<svg class="hero__arrow link-arrow--primary" viewBox="0 0 22 16" fill="none"
+				<h3 class="details__title card-heading">Smart room</h3>
+				<div class="details__wrapper">
+					<div class="details__info">
+						<p class="details-info__text">Space and forest views - in Standard rooms you will feel the peace and
+							beauty
+							which will give you a suburban complex. At your request we will place an extra bed.</p>
+						<a href="#" class="details-link link--primary">
+							<span class="details-link__text link-text--primary">Book a room</span>
+							<svg class="details-link__arrow link-arrow--primary" viewBox="0 0 22 16" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
 									stroke-linejoin="round" />
 							</svg>
 						</a>
-					</article>
-					<div class="hero__decor decor-hero">
-						<img class="decor-hero__img" src="./img/main/hero/hero-bg.jpg" alt="">
-						<div class="decor-hero__text">
-							<span class="decor-hero__text--left">Where Nature</span><span class="decor-hero__text--right">Meets
-								Luxury</span>
-						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-		<section class="about" id="about-scroll">
-			<div class="container">
-				<article class="about__info">
-					<div class="about__inner">
-						<h2 class="about__title">About us</h2>
-						<ul class="about__items animated__block">
-							<li class="about__item item-about">
-								<h2 class="item-about__title">5</h2>
-								<p class="item-about__text">stars of service quality that will give you an unforgettable
-									experience
-								</p>
+					<div class="details__check">
+						<ul class="details-check__items">
+							<li class="details-check__item">
+								<p class="details-check__text"><span class="details-check__concept">Rate:</span><span
+										class="details-check__impotrance">Bed & Breakfast</span></p>
+								<p class="details-check__text"><span class="details-check__concept">Guests:</span><span
+										class="details-check__impotrance">1 room, 2 adults, 0 cheildren</span></p>
+								<p class="details-check__text"><span class="details-check__concept">Check-in:</span><span
+										class="details-check__impotrance">Sunday, October 27, 2024</span></p>
+								<p class="details-check__text"><span class="details-check__concept">Check-out:</span><span
+										class="details-check__impotrance">Monday, October 28, 2024</span></p>
 							</li>
-							<li class="about__item item-about">
-								<h2 class="item-about__title">10+</h2>
-								<p class="item-about__text">original relaxation, recovery programs, massage treatments</p>
-							</li>
-							<li class="about__item item-about">
-								<h2 class="item-about__title">200+</h2>
-								<p class="item-about__text">square meters of SPA area, located among the picturesque Carpathians
-								</p>
-							</li>
-							<li class="about__item item-about">
-								<h2 class="item-about__title">8+</h2>
-								<p class="item-about__text">years provide unforgettable vacations immersed in unforgettable
-									nature
-								</p>
+						</ul>
+						<ul class="details-check__items">
+							<li class="details-check__item">
+								<p class="details-check__text"><span class="details-check__concept">Stay hotel:</span><span
+										class="details-check__impotrance">UAH 2650</span></p>
+								<p class="details-check__text"><span class="details-check__concept">Taxes:</span><span
+										class="details-check__impotrance">UAH 350</span></p>
+								<p class="details-check__text"><span class="details-check__concept">Extras:</span><span
+										class="details-check__impotrance">UAH 0</span></p>
+								<p class="details-check__text details-check__text--dark-accent"><span
+										class="details-check__concept">Total:</span><span class="details-check__impotrance">UAH
+										3000</span></p>
 							</li>
 						</ul>
 					</div>
-				</article>
-				<section class="about__promo promo-about">
-					<div class="promo-about__inner">
-						<video class="promo-about__video" loop muted poster="./img/main/about/promo-about__video-prev.jpg">
-							<source class="promo-about__video-link" src="./video/about/video-01.mp4" type="video/mp4">
-						</video>
-						<div class="promo-about__controls">
-							<button class="promo-about__btn promo-about__play-btn"><img src="./img/main/video/play-btn.svg"
-									alt="play-btn"></button>
-							<button class="promo-about__btn promo-about__pause-btn hidden"><img
-									src="./img/main/video/pause-btn.svg" alt="pause-btn"></button>
-						</div>
-					</div>
-				</section>
-			</div>
-		</section>
-		<section class="facilities" id="facilities-scroll">
-			<h2 class="facilities__title">Our Facilities</h2>
-			<div class="facilities__swiper swiper">
-				<div class="facilities__swiper-wrapper swiper-wrapper">
-					<div class="facilities__slide swiper-slide">
-						<div class="facilities__slide-wrapper">
-							<div class="facilities__swiper-images">
-								<img class="facilities__swiper-img" src="./img/main/facilities/slide-img01.jpg" alt="Slide 01">
-							</div>
-							<article class="facilities__swiper-card swiper-card__facilities">
-								<div class="swiper-card__facilities-wrapper">
-									<h3 class="facilities__swiper-title card-heading">restaurant</h3>
-									<div class="swiper-card__facilities-inner">
-										<p class="swiper-card__facilities-subtitle subtitle-text">The cozy restaurant located on
-											the hotel
-											grounds
-											will delight you with delicious dishes of Ukrainian and Georgian cuisine</p>
-										<div class="swiper-card__facilities-info">
-											<p class="swiper-card__facilities-heading subtitle">Rooms include two meal plans:</p>
-											<ul class="swiper-card__facilities-items">
-												<li class="swiper-card__facilities-item subtitle-text">Bed & Breakfast</li>
-												<li class="swiper-card__facilities-item subtitle-text">All Inclusive</li>
-											</ul>
-										</div>
-										<div class="swiper-card__facilities-info">
-											<p class="swiper-card__facilities-heading subtitle">Working hours:</p>
-											<ul class="swiper-card__facilities-items">
-												<li class="swiper-card__facilities-item subtitle-text">Breakfast 7:30-10:30</li>
-												<li class="swiper-card__facilities-item subtitle-text">Restaurant until 22:30</li>
-											</ul>
-										</div>
-									</div>
-									<a href="./pages/booking-page.html" class="swiper-card__facilities-link link--primary">
-										<span class="swiper-card__facilities-text link-text--primary">Book a room</span>
-										<svg class="swiper-card__facilities-arrow link-arrow--primary" viewBox="0 0 22 16"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
-												stroke-linejoin="round" />
-										</svg>
-									</a>
-								</div>
-							</article>
-						</div>
-					</div>
-					<div class="facilities__slide swiper-slide">
-						<div class="facilities__slide-wrapper">
-							<div class="facilities__swiper-images">
-								<img class="facilities__swiper-img" src="./img/main/facilities/slide-img02.jpg" alt="Slide 02">
-							</div>
-							<article class="facilities__swiper-card swiper-card__facilities">
-								<div class="swiper-card__facilities-wrapper">
-									<h3 class="facilities__swiper-title card-heading">spa-zona</h3>
-									<div class="swiper-card__facilities-inner">
-										<p class="swiper-card__facilities-subtitle subtitle-text">Spa-zone UAH 600/adult, UAH
-											300/children, there are bathrobes and slippers at the reception (extra charge)</p>
-										<div class="swiper-card__facilities-info">
-											<p class="swiper-card__facilities-heading subtitle">Rooms include these services:</p>
-											<ul class="swiper-card__facilities-items">
-												<li class="swiper-card__facilities-item subtitle-text">Sauna</li>
-												<li class="swiper-card__facilities-item subtitle-text">Roman steam room with salt
-												</li>
-												<li class="swiper-card__facilities-item subtitle-text">Steam room</li>
-												<li class="swiper-card__facilities-item subtitle-text">Sensational shower</li>
-												<li class="swiper-card__facilities-item subtitle-text">Jacuzzi</li>
-												<li class="swiper-card__facilities-item subtitle-text">Relaxation room</li>
-												<li class="swiper-card__facilities-item subtitle-text">Swimming pool</li>
-												<li class="swiper-card__facilities-item subtitle-text">Spa-Bar</li>
-												<li class="swiper-card__facilities-item subtitle-text">Robes and slippers</li>
-											</ul>
-										</div>
-										<div class="swiper-card__facilities-info">
-											<p class="swiper-card__facilities-heading subtitle">Working hours:</p>
-											<ul class="swiper-card__facilities-items">
-												<li class="swiper-card__facilities-item subtitle-text">SPA: 08:00 - 22:00</li>
-												<li class="swiper-card__facilities-item subtitle-text">SPA-Bar 10:00-22:00</li>
-											</ul>
-										</div>
-									</div>
-									<a href="./pages/booking-page.html" class="swiper-card__facilities-link link--primary">
-										<span class="swiper-card__facilities-text link-text--primary">Book a room</span>
-										<svg class="swiper-card__facilities-arrow link-arrow--primary" viewBox="0 0 22 16"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
-												stroke-linejoin="round" />
-										</svg>
-									</a>
-								</div>
-							</article>
-						</div>
-					</div>
-					<div class="facilities__slide swiper-slide">
-						<div class="facilities__slide-wrapper">
-							<div class="facilities__swiper-images">
-								<img class="facilities__swiper-img" src="./img/main/facilities/slide-img03.jpg" alt="Slide 03">
-							</div>
-							<article class="facilities__swiper-card swiper-card__facilities">
-								<div class="swiper-card__facilities-wrapper">
-									<h3 class="facilities__swiper-title card-heading">room service</h3>
-									<div class="swiper-card__facilities-inner">
-										<p class="swiper-card__facilities-subtitle subtitle-text">For the comfort of our guests,
-											we
-											clean the rooms daily. </p>
-										<div class="swiper-card__facilities-info">
-											<p class="swiper-card__facilities-heading subtitle">Rooms include these services:</p>
-											<ul class="swiper-card__facilities-items">
-												<li class="swiper-card__facilities-item subtitle-text">Towels</li>
-												<li class="swiper-card__facilities-item subtitle-text">Bathrobes</li>
-												<li class="swiper-card__facilities-item subtitle-text">Bed linen</li>
-												<li class="swiper-card__facilities-item subtitle-text">Option “Food in room”</li>
-											</ul>
-										</div>
-										<div class="swiper-card__facilities-info">
-											<p class="swiper-card__facilities-heading subtitle">Service hours:</p>
-											<ul class="swiper-card__facilities-items">
-												<li class="swiper-card__facilities-item subtitle-text">11:00 - 15:00</li>
-											</ul>
-										</div>
-									</div>
-									<a href="./pages/booking-page.html" class="swiper-card__facilities-link link--primary">
-										<span class="swiper-card__facilities-text link-text--primary">Book a room</span>
-										<svg class="swiper-card__facilities-arrow link-arrow--primary" viewBox="0 0 22 16"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
-												stroke-linejoin="round" />
-										</svg>
-									</a>
-								</div>
-							</article>
-						</div>
-					</div>
-					<div class="facilities__slide swiper-slide">
-						<div class="facilities__slide-wrapper">
-							<div class="facilities__swiper-images">
-								<img class="facilities__swiper-img" src="./img/main/facilities/slide-img04.jpg" alt="Slide 04">
-							</div>
-							<article class="facilities__swiper-card swiper-card__facilities">
-								<div class="swiper-card__facilities-wrapper">
-									<h3 class="facilities__swiper-title card-heading">transfer</h3>
-									<div class="swiper-card__facilities-inner">
-										<p class="swiper-card__facilities-subtitle subtitle-text">Our convenient transfer service
-											is
-											available to all guests, offering transportation to and from the airport or other local
-											destinations. Whether you require a ride for business or leisure, our professional
-											drivers
-											ensure a smooth and comfortable journey. Advance booking is recommended to guarantee
-											availability.</p>
-										<div class="swiper-card__facilities-info">
-											<p class="swiper-card__facilities-heading subtitle">Our taxi:</p>
-											<ul class="swiper-card__facilities-items">
-												<li class="swiper-card__facilities-item subtitle-text">Toyota</li>
-												<li class="swiper-card__facilities-item subtitle-text">Ford</li>
-												<li class="swiper-card__facilities-item subtitle-text">Hyundai</li>
-												<li class="swiper-card__facilities-item subtitle-text">Nissan</li>
-											</ul>
-										</div>
-									</div>
-									<a href="./pages/booking-page.html" class="swiper-card__facilities-link link--primary">
-										<span class="swiper-card__facilities-text link-text--primary">Book a room</span>
-										<svg class="swiper-card__facilities-arrow link-arrow--primary" viewBox="0 0 22 16"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
-												stroke-linejoin="round" />
-										</svg>
-									</a>
-								</div>
-							</article>
-						</div>
-					</div>
-					<div class="facilities__slide swiper-slide">
-						<div class="facilities__slide-wrapper">
-							<div class="facilities__swiper-images">
-								<img class="facilities__swiper-img" src="./img/main/facilities/slide-img05.jpg" alt="Slide 05">
-							</div>
-							<article class="facilities__swiper-card swiper-card__facilities">
-								<div class="swiper-card__facilities-wrapper">
-									<h3 class="facilities__swiper-title card-heading">gym</h3>
-									<div class="swiper-card__facilities-inner">
-										<p class="swiper-card__facilities-subtitle subtitle-text">Stay fit and energized during
-											your
-											stay with us at our state-of-the-art gym, designed to cater to all your fitness needs.
-										</p>
-										<div class="swiper-card__facilities-info">
-											<p class="swiper-card__facilities-heading subtitle">Rooms include these services:</p>
-											<ul class="swiper-card__facilities-items">
-												<li class="swiper-card__facilities-item subtitle-text">Yoga Classes</li>
-												<li class="swiper-card__facilities-item subtitle-text">Personal Training Sessions
-												</li>
-												<li class="swiper-card__facilities-item subtitle-text">Group Fitness Classes</li>
-												<li class="swiper-card__facilities-item subtitle-text">Aquatic Fitness</li>
-											</ul>
-										</div>
-										<div class="swiper-card__facilities-info">
-											<p class="swiper-card__facilities-heading subtitle">Working hours:</p>
-											<ul class="swiper-card__facilities-items">
-												<li class="swiper-card__facilities-item subtitle-text">08:00 - 22:00</li>
-											</ul>
-										</div>
-									</div>
-									<a href="./pages/booking-page.html" class="swiper-card__facilities-link link--primary">
-										<span class="swiper-card__facilities-text link-text--primary">Book a room</span>
-										<svg class="swiper-card__facilities-arrow link-arrow--primary" viewBox="0 0 22 16"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
-												stroke-linejoin="round" />
-										</svg>
-									</a>
-								</div>
-							</article>
-						</div>
-					</div>
 				</div>
-				<div class="facilities__swiper-pagination swiper-pagination"></div>
 			</div>
 		</section>
-		<section class="room" id="room-scroll">
-			<div class="container">
-				<header class="room__header main-section__header">
-					<h2 class="room__title">Our rooms</h2>
-					<p class="room__text body-text">All rooms include the use of the spa-zone, free use of parking, room
-						service, use
-						of the gym and transfer (extra charge). Our guests are able to use restaurant and spa-bar.
-						There are two meal plans: Bed & Breakfast and All Inclusive.</p>
-					<a class="room__btn" href="#room-cards--swipe"><svg width="76" height="101" viewBox="0 0 76 101"
-							fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M37.9488 8L38 68.2849M22.5 47.9142L38 69L53.5 47.9142" stroke="#60604C"
-								stroke-linecap="round" stroke-linejoin="round" />
-							<path
-								d="M57.4999 32.1669C68.4995 43.1665 68.4995 61.0005 57.4999 72.0001C46.5002 82.9998 28.6663 82.9998 17.6666 72.0001C6.66698 61.0005 6.66698 43.1665 17.6666 32.1669"
-								stroke="#60604C" stroke-linecap="round" />
-						</svg>
-					</a>
-				</header>
-				<ul class="room__cards" id="room-cards--swipe">
-					<li class="room__card">
-						<div class="room-card__info">
-							<header class="room-card__header">
-								<h3 class="room-card__title card-heading card-heading">Standard room</h3>
-								<ul class="room-card__parametrs">
-									<li class="room-parametrs__item">
-										<img class="room-parametrs__icon room-icon__bed" src="./img/main/room/room-icon-bed.svg"
-											alt="icon bed">
-										<p class="room-parametrs__text">1-2 persons</p>
-									</li>
-									<li class="room-parametrs__item">
-										<img class="room-parametrs__icon room-icon__size" src="./img/main/room/room-icon-size.svg"
-											alt="Size room">
-										<p class="room-parametrs__text">33 m<sup>2</sup></p>
-									</li>
-								</ul>
-							</header>
-							<p class="room-card__text body-text">Space and forest views - in Standard rooms you will feel the
-								peace and
-								beauty which will give you a suburban complex. At your request we will place an extra bed.</p>
-							<footer class="room-card__footer">
-								<strong class="room-card__price price">from uah 3000/night</strong>
-								<a class="room-card__link link--primary" href="./pages/room-details/room-standard.html">
-									<span class="room-card__link-text link-text--primary">check availability</span>
-									<svg class="room-card__link-arrow link-arrow--primary" viewBox="0 0 22 16" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-								</a>
-							</footer>
-						</div>
-						<img class="room-card__img" src="./img/main/room/room-1.jpg" alt="Room Picture">
-					</li>
-					<li class="room__card">
-						<div class="room-card__info">
-							<header class="room-card__header">
-								<h3 class="room-card__title card-heading">smart room</h3>
-								<ul class="room-card__parametrs">
-									<li class="room-parametrs__item">
-										<img class="room-parametrs__icon room-icon__bed" src="./img/main/room/room-icon-bed.svg"
-											alt="icon bed">
-										<p class="room-parametrs__text">1-2 persons</p>
-									</li>
-									<li class="room-parametrs__item">
-										<img class="room-parametrs__icon room-icon__size" src="./img/main/room/room-icon-size.svg"
-											alt="Size room">
-										<p class="room-parametrs__text">40 m<sup>2</sup></p>
-									</li>
-								</ul>
-							</header>
-							<p class="room-card__text body-text">Give yourself the opportunity to forget about all plans and
-								immerse
-								yourself in our modern but cozy room with private bathroom. Feel the warm embrace of a soft bed
-								and care in the Smart Room.</p>
-							<footer class="room-card__footer">
-								<strong class="room-card__price price">from uah 3500/night</strong>
-								<a class="room-card__link link--primary" href="./pages/room-details/room-smart.html">
-									<span class="room-card__link-text link-text--primary">check availability</span>
-									<svg class="room-card__link-arrow link-arrow--primary" viewBox="0 0 22 16" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-								</a>
-							</footer>
-						</div>
-						<img class="room-card__img" src="./img/main/room/room-2.jpg" alt="Room Picture">
-					</li>
-					<li class="room__card">
-						<div class="room-card__info">
-							<header class="room-card__header">
-								<h3 class="room-card__title card-heading">natural Retreat</h3>
-								<ul class="room-card__parametrs">
-									<li class="room-parametrs__item">
-										<img class="room-parametrs__icon room-icon__bed" src="./img/main/room/room-icon-bed.svg"
-											alt="icon bed">
-										<p class="room-parametrs__text">2-4 persons</p>
-									</li>
-									<li class="room-parametrs__item">
-										<img class="room-parametrs__icon room-icon__size" src="./img/main/room/room-icon-size.svg"
-											alt="Size room">
-										<p class="room-parametrs__text">60 m<sup>2</sup></p>
-									</li>
-								</ul>
-							</header>
-							<p class="room-card__text body-text">Indulge in relaxation with a private pool, forest and mountain
-								views.
-								The natural Retreat is crafted for guests seeking solitude and rejuvenation.</p>
-							<footer class="room-card__footer">
-								<strong class="room-card__price price">from uah 5000/night</strong>
-								<a class="room-card__link link--primary" href="./pages/room-details/room-natural.html">
-									<span class="room-card__link-text link-text--primary">check availability</span>
-									<svg class="room-card__link-arrow link-arrow--primary" viewBox="0 0 22 16" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-								</a>
-							</footer>
-						</div>
-						<img class="room-card__img" src="./img/main/room/room-3.jpg" alt="Room Picture">
-					</li>
-					<li class="room__card">
-						<div class="room-card__info">
-							<header class="room-card__header">
-								<h3 class="room-card__title card-heading">Deluxe Balcony</h3>
-								<ul class="room-card__parametrs">
-									<li class="room-parametrs__item">
-										<img class="room-parametrs__icon room-icon__bed" src="./img/main/room/room-icon-bed.svg"
-											alt="icon bed">
-										<p class="room-parametrs__text">2-4 persons</p>
-									</li>
-									<li class="room-parametrs__item">
-										<img class="room-parametrs__icon room-icon__size" src="./img/main/room/room-icon-size.svg"
-											alt="Size room">
-										<p class="room-parametrs__text">70 m<sup>2</sup></p>
-									</li>
-								</ul>
-							</header>
-							<p class="room-card__text body-text">A spacious room the Deluxe Balcony offers privacy and comfort
-								with
-								breathtaking mountain views from a spacious balcony.</p>
-							<footer class="room-card__footer">
-								<strong class="room-card__price price">from uah 6000/night</strong>
-								<a class="room-card__link link--primary" href="./pages/room-details/room-deluxe.html">
-									<span class="room-card__link-text link-text--primary">check availability</span>
-									<svg class="room-card__link-arrow link-arrow--primary" viewBox="0 0 22 16" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-								</a>
-							</footer>
-						</div>
-						<img class="room-card__img" src="./img/main/room/room-4.jpg" alt="Room Picture">
-					</li>
-					<li class="room__card">
-						<div class="room-card__info">
-							<header class="room-card__header">
-								<h3 class="room-card__title card-heading">mountain delight</h3>
-								<ul class="room-card__parametrs">
-									<li class="room-parametrs__item">
-										<img class="room-parametrs__icon room-icon__bed" src="./img/main/room/room-icon-bed.svg"
-											alt="icon bed">
-										<p class="room-parametrs__text">1-2 persons</p>
-									</li>
-									<li class="room-parametrs__item">
-										<img class="room-parametrs__icon room-icon__size" src="./img/main/room/room-icon-size.svg"
-											alt="Size room">
-										<p class="room-parametrs__text">30 m<sup>2</sup></p>
-									</li>
-								</ul>
-							</header>
-							<p class="room-card__text body-text">A luxurious room with a view of the mountains, which will help
-								you relax
-								and enjoy nature to the fullest.</p>
-							<footer class="room-card__footer">
-								<strong class="room-card__price price">from uah 3700/night</strong>
-								<a class="room-card__link link--primary" href="./pages/room-details/room-mountain.html">
-									<span class="room-card__link-text link-text--primary">check availability</span>
-									<svg class="room-card__link-arrow link-arrow--primary" viewBox="0 0 22 16" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 8.013L20.789 8M14.012 15L21 8L14.012 1" stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-								</a>
-							</footer>
-						</div>
-						<img class="room-card__img" src="./img/main/room/room-5.jpg" alt="Room Picture">
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="gallery" id="gallery-scroll">
-			<header class="gallery__header main-section__header">
-				<h2 class="gallery__title">Our Gallery</h2>
-				<p class="gallery__text body-text">Browse our gallery for a glimpse of the beauty and elegance awaiting you
-					at our Carpathian sanctuary</p>
-			</header>
+		<section class="gallery">
 			<div class="gallery__swipers">
 				<div class="swiper swiper-gallery-1">
-					<h2 class="swiper-gallery__title">restaurant</h2>
+					<h2 class="swiper-gallery__title">smart room</h2>
 					<div class="swiper-wrapper swiper-wrapper__gallery">
 						<div class="swiper-slide gallery-slide">
-							<img class="gallery-slide__img" src="./img/main/gallery/restaurant/restaurant-1.jpg"
-								alt="restaurant slide 1">
+							<img class="gallery-slide__img" src="../../img/rooms/smart-room/smart-room-1.jpg"
+								alt="smart room slide 1">
 						</div>
 						<div class="swiper-slide swiper-slide__gallery">
-							<img class="gallery-slide__img" src="./img/main/gallery/restaurant/restaurant-2.jpg"
-								alt="restaurant slide 2">
+							<img class="gallery-slide__img" src="../../img/rooms/smart-room/smart-room-2.jpg"
+								alt="smart room slide 2">
 						</div>
 						<div class="swiper-slide swiper-slide__gallery">
-							<img class="gallery-slide__img" src="./img/main/gallery/restaurant/restaurant-3.jpg"
-								alt="restaurant slide 3">
+							<img class="gallery-slide__img" src="../../img/rooms/smart-room/smart-room-3.jpg"
+								alt="smart room slide 3">
 						</div>
 						<div class="swiper-slide swiper-slide__gallery">
-							<img class="gallery-slide__img" src="./img/main/gallery/restaurant/restaurant-4.jpg"
-								alt="restaurant slide 4">
-						</div>
-					</div>
-					<div class="swiper-button-prev gallery-button-prew"><svg width="40" height="22" viewBox="0 0 40 22"
-							fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M29.7587 0.437513L39.5494 9.94375C40.1502 10.5271 40.1502 11.4729 39.5494 12.0562L29.7587 21.5625C29.1579 22.1458 28.1838 22.1458 27.583 21.5625C26.9822 20.9791 26.9822 20.0333 27.583 19.45L34.7474 12.4938H0V9.50624H34.7474L27.583 2.55001C26.9822 1.96666 26.9822 1.02086 27.583 0.437513C28.1838 -0.145838 29.1579 -0.145838 29.7587 0.437513Z"
-								fill="#F9F4EF" />
-						</svg>
-					</div>
-					<div class="swiper-button-next gallery-button-next"><svg width="40" height="22" viewBox="0 0 40 22"
-							fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M29.7587 0.437513L39.5494 9.94375C40.1502 10.5271 40.1502 11.4729 39.5494 12.0562L29.7587 21.5625C29.1579 22.1458 28.1838 22.1458 27.583 21.5625C26.9822 20.9791 26.9822 20.0333 27.583 19.45L34.7474 12.4938H0V9.50624H34.7474L27.583 2.55001C26.9822 1.96666 26.9822 1.02086 27.583 0.437513C28.1838 -0.145838 29.1579 -0.145838 29.7587 0.437513Z"
-								fill="#F9F4EF" />
-						</svg>
-					</div>
-				</div>
-				<div class="swiper swiper-gallery-2">
-					<h2 class="swiper-gallery__title">Spa-zona</h2>
-					<div class="swiper-wrapper swiper-wrapper__gallery">
-						<div class="swiper-slide gallery-slide">
-							<img class="gallery-slide__img" src="./img/main/gallery/spa-zone/spa-zone-1.jpg"
-								alt="spa-zone slide 1">
+							<img class="gallery-slide__img" src="../../img/rooms/smart-room/smart-room-4.jpg"
+								alt="smart room slide 4">
 						</div>
 						<div class="swiper-slide swiper-slide__gallery">
-							<img class="gallery-slide__img" src="./img/main/gallery/spa-zone/spa-zone-2.jpg"
-								alt="spa-zone slide 2">
+							<img class="gallery-slide__img" src="../../img/rooms/smart-room/smart-room-5.jpg"
+								alt="smart room slide 5">
 						</div>
 						<div class="swiper-slide swiper-slide__gallery">
-							<img class="gallery-slide__img" src="./img/main/gallery/spa-zone/spa-zone-3.jpg"
-								alt="spa-zone slide 3">
-						</div>
-						<div class="swiper-slide swiper-slide__gallery">
-							<img class="gallery-slide__img" src="./img/main/gallery/spa-zone/spa-zone-4.jpg"
-								alt="spa-zone slide 4">
-						</div>
-					</div>
-					<div class="swiper-button-prev gallery-button-prew"><svg width="40" height="22" viewBox="0 0 40 22"
-							fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M29.7587 0.437513L39.5494 9.94375C40.1502 10.5271 40.1502 11.4729 39.5494 12.0562L29.7587 21.5625C29.1579 22.1458 28.1838 22.1458 27.583 21.5625C26.9822 20.9791 26.9822 20.0333 27.583 19.45L34.7474 12.4938H0V9.50624H34.7474L27.583 2.55001C26.9822 1.96666 26.9822 1.02086 27.583 0.437513C28.1838 -0.145838 29.1579 -0.145838 29.7587 0.437513Z"
-								fill="#F9F4EF" />
-						</svg>
-					</div>
-					<div class="swiper-button-next gallery-button-next"><svg width="40" height="22" viewBox="0 0 40 22"
-							fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M29.7587 0.437513L39.5494 9.94375C40.1502 10.5271 40.1502 11.4729 39.5494 12.0562L29.7587 21.5625C29.1579 22.1458 28.1838 22.1458 27.583 21.5625C26.9822 20.9791 26.9822 20.0333 27.583 19.45L34.7474 12.4938H0V9.50624H34.7474L27.583 2.55001C26.9822 1.96666 26.9822 1.02086 27.583 0.437513C28.1838 -0.145838 29.1579 -0.145838 29.7587 0.437513Z"
-								fill="#F9F4EF" />
-						</svg>
-					</div>
-				</div>
-				<div class="swiper swiper-gallery-3">
-					<h2 class="swiper-gallery__title">gym</h2>
-					<div class="swiper-wrapper swiper-wrapper__gallery">
-						<div class="swiper-slide gallery-slide">
-							<img class="gallery-slide__img" src="./img/main/gallery/gym/gym-1.jpg" alt="gym slide 1">
-						</div>
-						<div class="swiper-slide swiper-slide__gallery">
-							<img class="gallery-slide__img" src="./img/main/gallery/gym/gym-2.jpg" alt="gym slide 2">
-						</div>
-						<div class="swiper-slide swiper-slide__gallery">
-							<img class="gallery-slide__img" src="./img/main/gallery/gym/gym-3.jpg" alt="gym slide 3">
-						</div>
-						<div class="swiper-slide swiper-slide__gallery">
-							<img class="gallery-slide__img" src="./img/main/gallery/gym/gym-4.jpg" alt="gym slide 4">
-						</div>
-					</div>
-					<div class="swiper-button-prev gallery-button-prew"><svg width="40" height="22" viewBox="0 0 40 22"
-							fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M29.7587 0.437513L39.5494 9.94375C40.1502 10.5271 40.1502 11.4729 39.5494 12.0562L29.7587 21.5625C29.1579 22.1458 28.1838 22.1458 27.583 21.5625C26.9822 20.9791 26.9822 20.0333 27.583 19.45L34.7474 12.4938H0V9.50624H34.7474L27.583 2.55001C26.9822 1.96666 26.9822 1.02086 27.583 0.437513C28.1838 -0.145838 29.1579 -0.145838 29.7587 0.437513Z"
-								fill="#F9F4EF" />
-						</svg>
-					</div>
-					<div class="swiper-button-next gallery-button-next"><svg width="40" height="22" viewBox="0 0 40 22"
-							fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M29.7587 0.437513L39.5494 9.94375C40.1502 10.5271 40.1502 11.4729 39.5494 12.0562L29.7587 21.5625C29.1579 22.1458 28.1838 22.1458 27.583 21.5625C26.9822 20.9791 26.9822 20.0333 27.583 19.45L34.7474 12.4938H0V9.50624H34.7474L27.583 2.55001C26.9822 1.96666 26.9822 1.02086 27.583 0.437513C28.1838 -0.145838 29.1579 -0.145838 29.7587 0.437513Z"
-								fill="#F9F4EF" />
-						</svg>
-					</div>
-				</div>
-				<div class="swiper swiper-gallery-4">
-					<h2 class="swiper-gallery__title">swimming pool</h2>
-					<div class="swiper-wrapper swiper-wrapper__gallery">
-						<div class="swiper-slide gallery-slide">
-							<img class="gallery-slide__img" src="./img/main/gallery/swimming-pool/swimming-pool-1.jpg"
-								alt="swimming-pool slide 1">
-						</div>
-						<div class="swiper-slide swiper-slide__gallery">
-							<img class="gallery-slide__img" src="./img/main/gallery//swimming-pool/swimming-pool-2.jpg"
-								alt="swimming-pool slide 2">
-						</div>
-						<div class="swiper-slide swiper-slide__gallery">
-							<img class="gallery-slide__img" src="./img/main/gallery/swimming-pool/swimming-pool-3.jpg"
-								alt="swimming-pool slide 3">
-						</div>
-						<div class="swiper-slide swiper-slide__gallery">
-							<img class="gallery-slide__img" src="./img/main/gallery/swimming-pool/swimming-pool-4.jpg"
-								alt="swimming-pool slide 4">
+							<img class="gallery-slide__img" src="../../img/rooms/smart-room/smart-room-4.jpg"
+								alt="smart room slide 6">
 						</div>
 					</div>
 					<div class="swiper-button-prev gallery-button-prew"><svg width="40" height="22" viewBox="0 0 40 22"
@@ -676,50 +146,63 @@
 				</div>
 			</div>
 		</section>
-		<section class="contacts" id="contacts-scroll">
+		<section class="services">
 			<div class="container">
-				<header class="contacts__header">
-					<h2 class="contacts-title">Contacts </h2>
-				</header>
-				<address class="contacts__address">
-					<ul class="contacts-address__items">
-						<li class="contacts-address__item">
-							<p class="contacts-address__title subtitle">Address:</p>
-							<p class="contacts-address__link subtitle-text">123 Karpaty St., Yaremche, Ukraine</p>
-						</li>
-						<li class="contacts-address__item">
-							<p class="contacts-address__title subtitle">Phone:</p>
-							<a class="contacts-address__link subtitle-text" href="tel:380993456789">+380 993 456 789</a>
-						</li>
-						<li class="contacts-address__item">
-							<p class="contacts-address__title subtitle">Email:</p>
-							<a class="contacts-address__link subtitle-text"
-								href="mailto:relax@carpathianspa.ua">relax@carpathianspa.ua</a>
-						</li>
-					</ul>
-				</address>
+				<div class="services-wrapper">
+					<div class="services__box">
+						<article class="services-box__program">
+							<h4 class="services-program__title services-title">Room program</h4>
+							<ul class="services-program__items services-items">
+								<li class="services-program__item services-item">Breakfast 7:30-10:30</li>
+								<li class="services-program__item services-item">Spa-zone</li>
+								<li class="services-program__item services-item">Swimming pool</li>
+								<li class="services-program__item services-item">Gym</li>
+								<li class="services-program__item services-item">Room Service 11:00 - 15:00</li>
+							</ul>
+						</article>
+						<article class="services-box__facilities">
+							<h4 class="services-facilities__title services-title">Room Facilities</h4>
+							<div class="services-facilities__wrapper">
+								<ul class="services-facilities__items services-items">
+									<li class="services-facilities__item services-item">Private Bathrooms</li>
+									<li class="services-facilities__item services-item">Free WEFI</li>
+									<li class="services-facilities__item services-item">Air Conditioning</li>
+									<li class="services-facilities__item services-item">Room Service</li>
+									<li class="services-facilities__item services-item">Mini Fridge</li>
+								</ul>
+								<ul class="services-facilities__items services-items">
+									<li class="services-facilities__item services-item">Balcony</li>
+									<li class="services-facilities__item services-item">Coffee Maker</li>
+									<li class="services-facilities__item services-item">Mountain View</li>
+									<li class="services-facilities__item services-item">Iron and Ironing Board</li>
+									<li class="services-facilities__item services-item">Hair Dryer</li>
+								</ul>
+								<ul class="services-facilities__items services-items">
+									<li class="services-facilities__item services-item">Flat Screen TV</li>
+									<li class="services-facilities__item services-item">King Size Bed</li>
+									<li class="services-facilities__item services-item">High Speed Internet</li>
+									<li class="services-facilities__item services-item">Safe Box</li>
+									<li class="services-facilities__item services-item">Desk</li>
+								</ul>
+						</article>
+						<article class="services-box__extras">
+							<h4 class="services-extras__title services-title">Do you want to add extras?</h4>
+							<form class="services-extras__form">
+								<input class="services-extras__checkbox" type="checkbox" id="services-checkbox-1">
+								<label class="services-extras__label" for="services-checkbox-1">Baby cot/UAH 80</label>
+								<input class="services-extras__checkbox" type="checkbox" id="services-checkbox-2">
+								<label class="services-extras__label" for="services-checkbox-2">Extra towel/UAH 20</label>
+								<input class="services-extras__checkbox" type="checkbox" id="services-checkbox-3">
+								<label class="services-extras__label" for="services-checkbox-3">Extra slippers/UAH 20</label>
+								<input class="services-extras__checkbox" type="checkbox" id="services-checkbox-4">
+								<label class="services-extras__label" for="services-checkbox-4">Breakfast in room/UAH 50</label>
+								<input class="services-extras__checkbox" type="checkbox" id="services-checkbox-5">
+								<label class="services-extras__label" for="services-checkbox-5">Late check-out/UAH 50</label>
+							</form>
+					</div>
+					</article>
+				</div>
 			</div>
-			<div class="contacts__map">
-				<iframe class="contacts__frame"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d393.1967116271818!2d24.58631163111808!3d48.47376395065959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473725dc524aa57f%3A0xf845dc35020d9c61!2z0YPQuy4g0J_RgNC40LrQsNGA0L_QsNGC0YHQutCw0Y8sINCv0YDQtdC80YfQtSwg0JjQstCw0L3Qvi3QpNGA0LDQvdC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1743076081133!5m2!1sru!2sua"
-					style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
-		</section>
-		<section class="social">
-			<div class="container">
-				<header class="social__header main-section__header">
-					<h2 class="social__title">We are in social media</h2>
-					<p class="social__text body-text">Stay connected and be the first to know about our special offers,
-						new spa programs, and seasonal events:</p>
-				</header>
-				<ul class="social__items">
-					<li class="social__item"><a class="social__link card-heading"
-							href="https://www.instagram.com/">Instagram</a></li>
-					<li class="social__item"><a class="social__link card-heading"
-							href="https://www.facebook.com/">Facebook</a></li>
-					<li class="social__item"><a class="social__link card-heading"
-							href="https://web.telegram.org/a/">Telegram</a></li>
-				</ul>
 			</div>
 		</section>
 	</main>
@@ -779,7 +262,7 @@
 		</div>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="../../js/main.js"></script>
 </body>
 
 </html>

@@ -89,6 +89,7 @@
 .services-extras__label::before {
 	content: "";
 	-webkit-appearance: none;
+	appearance: none;
 	position: relative;
 	display: inline-block;
 	width: 12.5px;
