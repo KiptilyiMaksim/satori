@@ -1,0 +1,38 @@
+@media (max-width: 1024px) {
+	.wrapper {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 60px;
+	}
+	.check {
+		grid-row-start: 1;
+	}
+	.check__img {
+		object-position: 50% 70%;
+	}
+	.payment-card__item {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
+	}
+	.payment-card__label-number,
+	.input-number__payment-card,
+	.input-name__payment-card,
+	.payment-card__inputs {
+		max-width: none;
+	}
+	.payment-card__inputs {
+		justify-content: flex-start;
+	}
+	.payment-card__security {
+		align-items: center;
+	}
+	.payment-card__buttons {
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+@media (max-width: 390px) {
+	.payment-form__label {
+		width: 135px;
+	}
+}

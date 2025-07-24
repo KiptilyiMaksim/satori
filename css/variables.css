@@ -1,0 +1,20 @@
+/* VARIABLES */
+:root {
+	/* Fonts */
+	--font-family-main: "Manrope", sans-serif;
+	--font-family-heading: "Lora", serif;
+	/* COLOR */
+	--color-white: #ffffff;
+	--color-white-accent: #f5f5f5;
+	--color-dark: #2c2b2b;
+	--color-grey: #727272;
+	--color-olive: #60604c;
+	--color-olive-light: #878774;
+	--color-room-line: #d8d8d8;
+	--color-hover: #e5e5e5;
+	/* INDENTATION */
+	--margin-bottom-section: 100px;
+	--margin-bottom-title-h2: 30px;
+	/* SELECTING */
+	--selecting-border-bottom: 2px solid var(--color-white);
+}

@@ -1,0 +1,24 @@
+@media (hover: hover) {
+	.air-datepicker-nav--title:hover {
+		--adp-background-color-hover: var(--color-hover);
+	}
+	.air-datepicker-nav--action:hover {
+		--adp-border-radius: 18px;
+		--adp-background-color-hover: var(--color-hover);
+	}
+}
+@media (max-width: 1024px) {
+	.air-datepicker-nav--action {
+		--adp-border-radius: 18px;
+	}
+	.air-datepicker-nav--action[data-action="prev"] {
+		top: 16.5px;
+		height: 40px;
+	}
+	.air-datepicker-body--cells {
+		--adp-day-cell-height: 45px;
+	}
+	.air-datepicker-body--cells .-month- {
+		margin: 0px 28px;
+	}
+}

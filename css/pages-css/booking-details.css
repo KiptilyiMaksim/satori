@@ -1,0 +1,321 @@
+h2 {
+	font-size: 24px;
+	margin-bottom: var(--margin-bottom-title-h2);
+}
+.card-heading {
+	font-size: 18px;
+}
+.main {
+	--margin-bottom-title-h2: 40px;
+	margin-top: 180px;
+}
+.wrapper {
+	display: grid;
+	grid-template-columns: minmax(560px, 630px) minmax(370px, 521px);
+	justify-content: space-between;
+	gap: 30px;
+	margin-bottom: 80px;
+}
+/* FORMS */
+/* FORM__PERSON */
+.forms__person {
+	display: flex;
+	flex-direction: column;
+	font-weight: 500;
+	margin-bottom: 60px;
+}
+.person-form__label {
+	margin-bottom: 10px;
+}
+.person-form__input {
+	padding: 12px 24px;
+	margin-bottom: 30px;
+	border: 1px solid var(--color-grey);
+	border-radius: 8px;
+	height: 46px;
+}
+.person-form__input::placeholder {
+	color: var(--color-grey);
+}
+.person-form__container {
+	display: flex;
+	gap: 4px;
+}
+.person-form__container .person-form__input {
+	width: 100%;
+}
+.person-form__details {
+	position: relative;
+}
+.person-form__summary {
+	width: 147px;
+	height: 46px;
+	padding: 12px 24px;
+	border: 1px solid var(--color-grey);
+	border-radius: 8px;
+	color: var(--color-grey);
+
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	list-style: none;
+	position: relative;
+	padding-right: 50px;
+	cursor: pointer;
+}
+.person-form__summary .person-form__flag {
+	width: 34px;
+	height: 22px;
+}
+.person-form__summary::-webkit-details-marker {
+	display: none;
+}
+.person-form__custom-marker {
+	position: absolute;
+	right: 25px;
+	width: 16px;
+	height: 16px;
+	background-image: url("/img/icons/arrow-summary.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: transform 0.3s ease;
+}
+.person-form__custom-marker.open {
+	transform: rotate(180deg);
+	transition: transform 0.3s ease;
+}
+.person-form__dropdown {
+	position: absolute;
+	top: 50px;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 147px;
+	padding: 12px 24px;
+	border: 1px solid var(--color-grey);
+	border-radius: 8px;
+	background-color: var(--color-white);
+	cursor: pointer;
+}
+.person-form__item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.person-form__textarea {
+	min-height: 100px;
+	padding: 12px 24px;
+	border: 1px solid var(--color-grey);
+	border-radius: 8px;
+	resize: none;
+}
+
+/* PAYMENT */
+.payment-form__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+.payment-form__radio-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.payment-form__label {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 151px;
+	height: 48px;
+	border: 1px solid #e4e7ec;
+	border-radius: 6px;
+	background-color: var(--color-white);
+}
+.payment-form__label.payment-selected {
+	border: 2px solid var(--color-olive-light);
+}
+.payment-form__radio[type="radio"] {
+	display: none;
+}
+.payment-card__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.payment-card__icons {
+	display: flex;
+	gap: 8px;
+}
+.payment-card__items {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.payment-card__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* .payment-card__item:not(:first-child) {
+	padding-right: 20px;
+} */
+.payment-card__info {
+	max-width: 240px;
+}
+.payment-card__info-title {
+	color: var(--color-dark);
+}
+.payment-card__info-subtitle {
+	font-size: 12px;
+	font-weight: 400;
+}
+.payment-card__input,
+.payment-card__date,
+.payment-card__security-input {
+	border: 1px solid var(--color-grey);
+	border-radius: 8px;
+}
+.payment-card__label-number {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	max-width: 322px;
+	width: 100%;
+}
+.payment-card__input {
+	width: 100%;
+	max-width: 322px;
+	padding: 12px 24px;
+}
+.payment-card__label-checked {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	padding: 4.8px;
+	border: 1px solid var(--color-grey);
+	border-radius: 50%;
+}
+.payment-card__label-icon {
+	width: 16px;
+	height: 16px;
+	stroke: var(--color-grey);
+}
+.payment-card__inputs {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	max-width: 322px;
+	width: 100%;
+}
+.payment-card__dates {
+	display: flex;
+	gap: 7px;
+	align-items: center;
+}
+.payment-card__date::-webkit-outer-spin-button,
+.payment-card__date::-webkit-inner-spin-button,
+.payment-card__security-input::-webkit-outer-spin-button,
+.payment-card__security-input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.payment-card__date[type="number"],
+.payment-card__security-input[type="number"] {
+	-moz-appearance: textfield;
+}
+.payment-card__date {
+	padding: 15px 19px;
+	text-align: center;
+}
+.payment-card__date,
+.payment-card__security-input {
+	width: 56px;
+	height: 46px;
+}
+.payment-card__decor {
+	font-size: 24px;
+	font-weight: 400;
+}
+.payment-card__security {
+	display: flex;
+	gap: 8px;
+}
+.payment-card__security-title {
+	color: var(--color-dark);
+}
+.payment-card__security-subtitle {
+	font-size: 12px;
+	font-weight: 400;
+}
+.payment-card__security-input {
+	padding: 15px 15.5px;
+}
+.payment-card__checkboxes {
+	display: flex;
+	flex-direction: column;
+}
+.payment-card__label-checkbox {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 12px;
+}
+.payment-card__checkbox {
+	width: 12px;
+	height: 12px;
+	margin: 4px;
+}
+.payment-card__buttons {
+	display: flex;
+	justify-content: space-between;
+}
+.payment-card__button--cancel {
+	background-color: inherit;
+	border: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+/* CHECK */
+.check {
+	height: max-content;
+	background-color: var(--color-white);
+	box-shadow: 10px 10px 40px 0px rgba(44, 43, 43, 0.1);
+	padding: 20px;
+}
+.check__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.check__img {
+	width: 100%;
+	height: 171px;
+	object-fit: cover;
+}
+.check__box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+}
+.check__item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.check__text {
+	display: grid;
+	grid-template-columns: repeat(2, 2fr);
+}
+.check__impotrance {
+	color: var(--color-dark);
+}
+.check__text--dark-accent {
+	color: var(--color-dark);
+	font-weight: 700;
+}
