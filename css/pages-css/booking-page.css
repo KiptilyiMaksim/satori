@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* HEADER */
 .header .burger-menu__line {
 	background-color: var(--color-dark);
@@ -176,3 +177,183 @@
 #room--swipe {
 	scroll-margin-block: 100px;
 }
+=======
+/* HEADER */
+.header .burger-menu__line {
+	background-color: var(--color-dark);
+}
+.header {
+	background-color: var(--color-white);
+}
+.header.scrolled {
+	transition: none;
+}
+/* SELECTING */
+.selecting {
+	color: var(--color-white-accent);
+	margin: 90px 0px var(--margin-bottom-section);
+	background-image: url("../../img/booking-page/selecting/selecting-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: calc(100vh - 90px);
+	width: 100%;
+}
+.selecting__wrapper {
+	max-width: 930px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 100px 20px 0px;
+}
+.selecting__header {
+	text-align: center;
+	margin-bottom: var(--margin-bottom-section);
+}
+.selecting__title {
+	margin-bottom: var(--margin-bottom-title-h2);
+}
+.selecting__text {
+	color: inherit;
+}
+/* FORM */
+.selecting__form {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+	margin-bottom: 66px;
+}
+.selecting-date__box {
+	position: relative;
+	max-width: 165px;
+	border-bottom: var(--selecting-border-bottom);
+}
+.selecting-date__box::after {
+	content: url("../../img/icons/calendar.svg");
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.selecting-date__input {
+	position: relative;
+	z-index: 1;
+	color: inherit;
+}
+.selecting-date__input::placeholder {
+	color: inherit;
+}
+.selecting-date__input:focus {
+	outline: 0;
+}
+.selecting__guests {
+	position: relative;
+	width: 220px;
+}
+.selecting-guests__box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: none;
+	margin-bottom: 14px;
+	width: 100%;
+	text-align: left;
+	color: inherit;
+	font: inherit;
+	border-bottom: var(--selecting-border-bottom);
+}
+.selecting-guests__box::after {
+	content: url("../../img/icons/arrow-toggle.svg");
+	display: inline-block;
+	margin-left: 8px;
+	transition: transform 0.3s ease;
+}
+.selecting__guests[open] .selecting-guests__box::after {
+	transform: rotate(180deg);
+}
+.selecting-guests__text {
+	text-transform: lowercase;
+}
+.selecting-guests__dropdown {
+	position: absolute;
+	width: 100%;
+	border-radius: 10px;
+	color: var(--color-dark);
+	background-color: var(--color-white);
+	z-index: 10;
+	max-height: 200px;
+}
+.selecting-guests__item {
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 500;
+}
+.selecting-guests__counter {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+.selecting-counter__btn {
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+.selecting-counter__item {
+	width: 20px;
+	text-align: center;
+}
+.selecting__guests.active .arrow {
+	transform: rotate(180deg);
+}
+.selecting-plan {
+	position: relative;
+	width: 220px;
+}
+.selecting-plan__box {
+	margin-bottom: 14px;
+	border-bottom: var(--selecting-border-bottom);
+}
+.selecting-plan__box::after {
+	content: url("../../img/icons/arrow-toggle.svg");
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: transform 0.3s ease;
+}
+.selecting-plan[open] .selecting-plan__box::after {
+	transform: rotate(180deg);
+}
+.selecting-plan__dropdown {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	border-radius: 10px;
+	background-color: var(--color-white);
+	padding: 20px;
+}
+.selecting-plan__item {
+	color: var(--color-dark);
+	width: 100%;
+	cursor: pointer;
+	transition: color 0.2s ease-in;
+}
+.selecting__btn {
+	margin: 0 auto;
+	color: var(--color-white);
+	border-color: var(--color-white);
+}
+.selecting-btn__arrow {
+	stroke: var(--color-white);
+}
+#room--swipe {
+	scroll-margin-block: 100px;
+}
+>>>>>>> 16588e38305bf76cafc79886fd0cd2adcabc799d
